@@ -133,16 +133,6 @@
 
     const actions = document.createElement("div");
     actions.className = "card-actions";
-    if (item.phoneme) {
-      const phonemeButton = document.createElement("button");
-      phonemeButton.type = "button";
-      phonemeButton.className = "audio-button phoneme-button";
-      phonemeButton.dataset.audio = "./assets/audio/" + lesson.id + "/phoneme/" + item.id + ".wav";
-      phonemeButton.dataset.voice = "phoneme";
-      phonemeButton.dataset.label = "音标 " + item.phoneme;
-      phonemeButton.textContent = "▶ " + phonemeButton.dataset.label;
-      actions.append(phonemeButton);
-    }
     ["ryan", "sonia"].forEach(function (voice) {
       const button = document.createElement("button");
       button.type = "button";
