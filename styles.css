@@ -223,7 +223,10 @@ h1, h2, p { margin-top: 0; }
 }
 
 .audio-button { border: 1px solid var(--teal-800); color: var(--teal-800); background: #fff; }
+.phoneme-button { grid-column: 1 / -1; color: #fff; background: var(--teal-700); }
+.phoneme-button:hover { color: #fff; background: var(--teal-900); }
 .audio-button:hover { background: var(--teal-100); }
+.phoneme-button:hover { background: var(--teal-900); }
 .audio-button.is-playing { color: #fff; background: var(--teal-800); }
 
 .practice-toggle {

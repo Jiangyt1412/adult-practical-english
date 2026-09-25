@@ -133,13 +133,24 @@
 
     const actions = document.createElement("div");
     actions.className = "card-actions";
+    if (item.phoneme) {
+      const phonemeButton = document.createElement("button");
+      phonemeButton.type = "button";
+      phonemeButton.className = "audio-button phoneme-button";
+      phonemeButton.dataset.audio = "./assets/audio/" + lesson.id + "/phoneme/" + item.id + ".wav";
+      phonemeButton.dataset.voice = "phoneme";
+      phonemeButton.dataset.label = "音标 " + item.phoneme;
+      phonemeButton.textContent = "▶ " + phonemeButton.dataset.label;
+      actions.append(phonemeButton);
+    }
     ["ryan", "sonia"].forEach(function (voice) {
       const button = document.createElement("button");
       button.type = "button";
       button.className = "audio-button";
       button.dataset.audio = "./assets/audio/" + lesson.id + "/" + voice + "/" + item.id + ".wav";
       button.dataset.voice = voice;
-      button.textContent = "▶ " + capitalize(voice);
+      button.dataset.label = capitalize(voice);
+      button.textContent = "▶ " + button.dataset.label;
       actions.append(button);
     });
 
@@ -211,7 +222,7 @@
     function resetButton() {
       if (!currentButton) return;
       currentButton.classList.remove("is-playing");
-      currentButton.textContent = "▶ " + capitalize(currentButton.dataset.voice);
+      currentButton.textContent = "▶ " + currentButton.dataset.label;
       currentButton = null;
     }
 
@@ -228,7 +239,7 @@
         resetButton();
         currentButton = button;
         button.classList.add("is-playing");
-        button.textContent = "■ " + capitalize(button.dataset.voice);
+        button.textContent = "■ " + button.dataset.label;
         audio.src = button.dataset.audio;
         audio.play().catch(function () { resetButton(); });
       });
