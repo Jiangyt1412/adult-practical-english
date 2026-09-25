@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#174f52">
+  <meta name="description" content="Lesson 2 review: British English IPA monophthongs, diphthongs, and consonants.">
+  <title>Lesson 2 · Adult Practical English</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./data/lessons.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body data-page="lesson" data-lesson="lesson-02">
+  <header class="lesson-topbar">
+    <div class="topbar-inner">
+      <a class="back-link" href="./index.html" aria-label="Back to lessons">← <span>Lessons</span></a>
+      <div class="progress-copy"><strong id="progress-count">0 / 44</strong> practised</div>
+    </div>
+    <div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div>
+  </header>
+  <main class="lesson-shell">
+    <header class="lesson-heading" id="lesson-heading"></header>
+    <div id="lesson-content"></div>
+    <section class="recording-panel" aria-labelledby="recording-title">
+      <p class="section-kicker">Speaking Practice</p>
+      <h2 id="recording-title">Record yourself</h2>
+      <div class="recording-actions">
+        <button class="record-button" id="record-button" type="button">Record yourself</button>
+        <button class="secondary-button" id="play-recording" type="button" disabled>Play my recording</button>
+      </div>
+      <p class="recording-status" id="recording-status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <audio id="lesson-audio" preload="none"></audio>
+</body>
+</html>

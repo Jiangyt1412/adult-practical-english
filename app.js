@@ -55,6 +55,12 @@
     subtitle.className = "lesson-subtitle";
     subtitle.textContent = lesson.title;
     heading.append(eyebrow, title, subtitle);
+    if (lesson.instructions) {
+      const instructions = document.createElement("p");
+      instructions.className = "lesson-instructions";
+      instructions.textContent = lesson.instructions;
+      heading.append(instructions);
+    }
 
     const content = document.getElementById("lesson-content");
     lesson.sections.forEach(function (section, sectionIndex) {
@@ -104,6 +110,14 @@
     });
     card.append(terms);
 
+    if (item.phoneme || item.meaning) {
+      const details = document.createElement("dl");
+      details.className = "word-details";
+      if (item.phoneme) appendDetail(details, "目标音标", item.phoneme);
+      if (item.meaning) appendDetail(details, "中文意思", item.meaning);
+      card.append(details);
+    }
+
     if (item.contrast) {
       const contrast = document.createElement("span");
       contrast.className = "contrast";
@@ -138,6 +152,16 @@
     actions.append(toggle);
     card.append(actions);
     return card;
+  }
+
+  function appendDetail(list, label, value) {
+    const group = document.createElement("div");
+    const term = document.createElement("dt");
+    const description = document.createElement("dd");
+    term.textContent = label;
+    description.textContent = value;
+    group.append(term, description);
+    list.append(group);
   }
 
   function capitalize(value) { return value.charAt(0).toUpperCase() + value.slice(1); }
