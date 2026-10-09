@@ -10,7 +10,7 @@
 | File | Voice | Rate | Bits | Channels | Peak dBFS | Clipping | Transient | QC |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | `assets/audio/lesson-02/ryan/about.wav` | Ryan | 24000 | 16 | 1 | -4.57 | No | No | Pass |
-| `assets/audio/lesson-03/ryan/aisle-seat.wav` | Ryan | 24000 | 16 | 1 | -4.84 | No | No | Pass |
+| `assets/audio/lesson-03/ryan/aisle-seat.wav` | Ryan | 24000 | 16 | 1 | -5.28 | No | No | Pass |
 | `assets/audio/lesson-01/ryan/bad.wav` | Ryan | 24000 | 16 | 1 | -6.05 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/bad.wav` | Ryan | 24000 | 16 | 1 | -6.05 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/bag.wav` | Ryan | 24000 | 16 | 1 | -5.3 | No | No | Pass |
@@ -152,7 +152,7 @@
 | `assets/audio/lesson-02/ryan/yes.wav` | Ryan | 24000 | 16 | 1 | -4.65 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/zoo.wav` | Ryan | 24000 | 16 | 1 | -3.19 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/about.wav` | Sonia | 24000 | 16 | 1 | -5.42 | No | No | Pass |
-| `assets/audio/lesson-03/sonia/aisle-seat.wav` | Sonia | 24000 | 16 | 1 | -7.62 | No | No | Pass |
+| `assets/audio/lesson-03/sonia/aisle-seat.wav` | Sonia | 24000 | 16 | 1 | -6.36 | No | No | Pass |
 | `assets/audio/lesson-01/sonia/bad.wav` | Sonia | 24000 | 16 | 1 | -6.66 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/bad.wav` | Sonia | 24000 | 16 | 1 | -6.66 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/bag.wav` | Sonia | 24000 | 16 | 1 | -7.04 | No | No | Pass |

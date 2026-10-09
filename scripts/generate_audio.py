@@ -68,8 +68,8 @@ def learner_text(text: str) -> str:
     return text.replace("; ", ". ... ")
 
 
-async def synthesize(text: str, voice: str, output: Path) -> None:
-    rate = "-6%" if ";" in text else "+0%"
+async def synthesize(text: str, voice: str, output: Path, rate: str | None = None) -> None:
+    rate = rate or ("-6%" if ";" in text else "+0%")
     communicate = edge_tts.Communicate(learner_text(text), voice, rate=rate)
     await communicate.save(str(output))
 
@@ -94,6 +94,43 @@ def read_pcm(path: Path) -> tuple[wave._wave_params, tuple[int, ...]]:
         return params, tuple()
     samples = struct.unpack(f"<{len(frames) // 2}h", frames)
     return params, samples
+
+
+async def generate_item_audio(item: dict, voice: str, ffmpeg: str, temp: Path, prefix: str, output: Path) -> None:
+    """Apply optional teaching pace without changing the displayed source wording."""
+    settings = item.get("audio", {})
+    parts = settings.get("parts")
+    if not parts:
+        mp3 = temp / f"{prefix}.mp3"
+        await synthesize(item["speech"], voice, mp3, settings.get("rate"))
+        run_ffmpeg(ffmpeg, mp3, output)
+        enforce_peak(ffmpeg, output)
+        return
+
+    if " ".join(parts) != item["speech"]:
+        raise ValueError("Spoken parts must preserve the original phrase")
+    segments = []
+    for index, text in enumerate(parts):
+        mp3 = temp / f"{prefix}-part-{index}.mp3"
+        wav = temp / f"{prefix}-part-{index}.wav"
+        await synthesize(text, voice, mp3, settings.get("rate"))
+        run_ffmpeg(ffmpeg, mp3, wav)
+        _, samples = read_pcm(wav)
+        audible = [position for position, sample in enumerate(samples) if abs(sample) > 80]
+        if not audible:
+            raise ValueError(f"Empty speech segment: {text}")
+        padding = round(TARGET_SAMPLE_RATE * 0.04)
+        start = max(0, audible[0] - padding)
+        end = min(len(samples), audible[-1] + padding + 1)
+        segments.append(struct.pack(f"<{end - start}h", *samples[start:end]))
+
+    gap = b"\0" * (round(TARGET_SAMPLE_RATE * settings.get("gap_ms", 180) / 1000) * TARGET_SAMPLE_WIDTH)
+    with wave.open(str(output), "wb") as wav:
+        wav.setnchannels(TARGET_CHANNELS)
+        wav.setsampwidth(TARGET_SAMPLE_WIDTH)
+        wav.setframerate(TARGET_SAMPLE_RATE)
+        wav.writeframes(gap.join(segments))
+    enforce_peak(ffmpeg, output)
 
 
 def peak_dbfs(samples: tuple[int, ...]) -> float:
@@ -176,7 +213,7 @@ def write_reports(root: Path, records: list[dict]) -> None:
     (root / "docs" / "AUDIO_REPORT.md").write_text("\n".join(rows) + "\n", encoding="utf-8")
 
 
-async def generate(force: bool) -> int:
+async def generate(force: bool, lesson_filter: str | None = None, item_filter: str | None = None) -> int:
     root = project_root()
     lessons = load_lessons(root)
     ffmpeg = find_ffmpeg()
@@ -191,12 +228,11 @@ async def generate(force: bool) -> int:
                 destination.mkdir(parents=True, exist_ok=True)
                 for index, item in enumerate(items, start=1):
                     wav_path = destination / f"{item['id']}.wav"
-                    if force or not wav_path.exists():
-                        mp3_path = temp / f"{lesson['id']}-{voice_key}-{item['id']}.mp3"
+                    selected = (not lesson_filter or lesson["id"] == lesson_filter) and (not item_filter or item["id"] == item_filter)
+                    if (force and selected) or not wav_path.exists():
                         print(f"[{lesson['id']} {voice_key} {index:02d}/{len(items)}] {item['id']}")
-                        await synthesize(item["speech"], voice_name, mp3_path)
-                        run_ffmpeg(ffmpeg, mp3_path, wav_path)
-                        enforce_peak(ffmpeg, wav_path)
+                        prefix = f"{lesson['id']}-{voice_key}-{item['id']}"
+                        await generate_item_audio(item, voice_name, ffmpeg, temp, prefix, wav_path)
                     records.append(inspect(wav_path, voice_key, voice_name))
 
     records.sort(key=lambda item: (item["voice"], item["filename"]))
@@ -212,8 +248,10 @@ async def generate(force: bool) -> int:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--force", action="store_true", help="Regenerate audio files that already exist")
+    parser.add_argument("--lesson", help="Limit forced regeneration to this lesson ID")
+    parser.add_argument("--item", help="Limit forced regeneration to this audio item ID")
     args = parser.parse_args()
-    return asyncio.run(generate(args.force))
+    return asyncio.run(generate(args.force, args.lesson, args.item))
 
 
 if __name__ == "__main__":

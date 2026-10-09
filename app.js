@@ -156,7 +156,7 @@
 
     const actions = document.createElement("div");
     actions.className = "card-actions";
-    if (!isDialogue) appendAudioButtons(actions, lesson.id, item.id, item.terms[0].text);
+    if (!isDialogue) appendAudioButtons(actions, lesson.id, item.id, item.terms[0].text, item.audio && item.audio.version);
 
     const toggle = document.createElement("button");
     toggle.type = "button";
@@ -169,12 +169,13 @@
     return card;
   }
 
-  function appendAudioButtons(actions, lessonId, audioId, text) {
+  function appendAudioButtons(actions, lessonId, audioId, text, revision) {
     ["ryan", "sonia"].forEach(function (voice) {
       const button = document.createElement("button");
       button.type = "button";
       button.className = "audio-button";
       button.dataset.audio = "./assets/audio/" + lessonId + "/" + voice + "/" + audioId + ".wav";
+      if (revision) button.dataset.audio += "?v=" + encodeURIComponent(revision);
       button.dataset.voice = voice;
       button.dataset.label = capitalize(voice);
       button.textContent = "▶ " + button.dataset.label;

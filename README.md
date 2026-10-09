@@ -136,7 +136,7 @@ The website does not use the GitHub API at runtime.
 
 - Lesson 1: Meeting People & Pronunciation Basics
 - Lesson 2: British English IPA Review, with 44 items covering monophthongs, diphthongs, and consonants
-- Lesson 3: Airport Review · 机场口语必背, with 38 vocabulary entries, 6 check-in question-and-answer groups, and 10 useful phrases. Each dialogue turn has its own Ryan and Sonia playback. English text, supplied IPA, Chinese meanings, and item order follow the source Word homework.
+- Lesson 3: Airport Review, with 38 vocabulary entries, 6 check-in question-and-answer groups, and 10 useful phrases. Each dialogue turn has its own Ryan and Sonia playback. English text, supplied IPA, Chinese meanings, and item order follow the source Word homework. The standalone “aisle seat” audio uses a slower pace and a short pause between words for clearer practice.
 
 ## Add another lesson
 

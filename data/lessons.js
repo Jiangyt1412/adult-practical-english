@@ -143,7 +143,7 @@ window.ADULT_ENGLISH_LESSONS = {
     {
       "id": "lesson-03",
       "number": "Lesson 3",
-      "title": "Airport Review · 机场口语必背",
+      "title": "Airport Review",
       "page": "lesson-03.html",
       "eyebrow": "Listen → Repeat → Practise",
       "sections": [
@@ -161,7 +161,7 @@ window.ADULT_ENGLISH_LESSONS = {
             {"id": "transfer", "meaning": "转机；转乘（动词）", "terms": [{"text": "transfer", "ipa": "/trænsˈfɜː/"}], "speech": "transfer"},
             {"id": "via", "meaning": "经由", "terms": [{"text": "via", "ipa": "/ˈvaɪə/"}], "speech": "via"},
             {"id": "window-seat", "meaning": "靠窗座位", "terms": [{"text": "window seat", "ipa": "/ˈwɪn.dəʊ ˌsiːt/"}], "speech": "window seat"},
-            {"id": "aisle-seat", "meaning": "靠过道座位", "terms": [{"text": "aisle seat", "ipa": "/aɪl/ /siːt/"}], "speech": "aisle seat"},
+            {"id": "aisle-seat", "meaning": "靠过道座位", "terms": [{"text": "aisle seat", "ipa": "/aɪl/ /siːt/"}], "speech": "aisle seat", "audio": {"parts": ["aisle", "seat"], "rate": "-12%", "gap_ms": 180, "version": "2"}},
             {"id": "middle", "meaning": "中间的", "terms": [{"text": "middle", "ipa": "/ˈmɪd.əl/"}], "speech": "middle"},
             {"id": "extra", "meaning": "额外的", "terms": [{"text": "extra", "ipa": "/ˈek.strə/"}], "speech": "extra"},
             {"id": "privilege", "meaning": "特权；优待", "terms": [{"text": "privilege", "ipa": "/ˈprɪv.əl.ɪdʒ/"}], "speech": "privilege"},

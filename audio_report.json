@@ -34,8 +34,8 @@
       "sample_rate": 24000,
       "bit_depth": 16,
       "channels": 1,
-      "duration_seconds": 1.632,
-      "peak_dbfs": -4.84,
+      "duration_seconds": 1.252,
+      "peak_dbfs": -5.28,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
@@ -2022,8 +2022,8 @@
       "sample_rate": 24000,
       "bit_depth": 16,
       "channels": 1,
-      "duration_seconds": 1.272,
-      "peak_dbfs": -7.62,
+      "duration_seconds": 1.361,
+      "peak_dbfs": -6.36,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
