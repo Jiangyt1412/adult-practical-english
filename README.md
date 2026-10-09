@@ -27,6 +27,7 @@ adult-practical-english/
 ├── lesson-01.html
 ├── lesson-02.html
 ├── lesson-03.html
+├── lesson-04.html
 ├── styles.css
 ├── app.js
 ├── manifest.json
@@ -39,7 +40,8 @@ adult-practical-english/
 │   └── audio/
 │       ├── lesson-01/
 │       ├── lesson-02/
-│       └── lesson-03/
+│       ├── lesson-03/
+│       └── lesson-04/
 ├── scripts/
 │   ├── generate_audio.py
 │   └── requirements.txt
@@ -86,7 +88,7 @@ Run:
 python scripts/generate_audio.py
 ```
 
-Then confirm the summary says 284 files, 142 Ryan files, 142 Sonia files, and `All QC passed: Yes`. The target format is WAV, 24,000 Hz, 16-bit PCM, mono, with a peak no higher than -1 dBFS. These checks cover audio format and signal quality, not a human assessment of pronunciation.
+Then confirm the summary says 390 files, 195 Ryan files, 195 Sonia files, and `All QC passed: Yes`. The target format is WAV, 24,000 Hz, 16-bit PCM, mono, with a peak no higher than -1 dBFS. These checks cover audio format and signal quality, not a human assessment of pronunciation.
 
 ## Deploy to GitHub Pages
 
@@ -137,6 +139,7 @@ The website does not use the GitHub API at runtime.
 - Lesson 1: Meeting People & Pronunciation Basics
 - Lesson 2: British English IPA Review, with 44 items covering monophthongs, diphthongs, and consonants
 - Lesson 3: Airport Review, with 38 vocabulary entries, 6 check-in question-and-answer groups, and 10 useful phrases. Each dialogue turn has its own Ryan and Sonia playback. English text, supplied IPA, Chinese meanings, and item order follow the source Word homework. The standalone “aisle seat” audio uses a slower pace and a short pause between words for clearer practice.
+- Lesson 4: Immigration & Customs Review, with 32 vocabulary entries and 10 scenario-based question-and-answer groups. Each question and example answer has its own Ryan and Sonia playback, including separate first-visit answer alternatives. Wording, IPA, Chinese meanings, scenario labels, and order follow the source Word homework.
 
 ## Add another lesson
 

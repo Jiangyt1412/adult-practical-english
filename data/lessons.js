@@ -236,6 +236,98 @@ window.ADULT_ENGLISH_LESSONS = {
           ]
         }
       ]
+    },
+    {
+      "id": "lesson-04",
+      "number": "Lesson 4",
+      "title": "Immigration & Customs Review",
+      "page": "lesson-04.html",
+      "eyebrow": "Listen → Repeat → Practise",
+      "sections": [
+        {
+          "title": "单词表",
+          "items": [
+            {"id": "immigration", "meaning": "入境检查", "terms": [{"text": "immigration", "ipa": "/ˌɪm.ɪˈɡreɪ.ʃən/"}], "speech": "immigration"},
+            {"id": "passport", "meaning": "护照", "terms": [{"text": "passport", "ipa": "/ˈpɑːs.pɔːt/"}], "speech": "passport"},
+            {"id": "return-ticket", "meaning": "往返机票", "terms": [{"text": "return ticket", "ipa": "/rɪˈtɜːn ˌtɪk.ɪt/"}], "speech": "return ticket"},
+            {"id": "return-flight", "meaning": "返程航班", "terms": [{"text": "return flight", "ipa": "/rɪˈtɜːn/ /flaɪt/"}], "speech": "return flight"},
+            {"id": "hotel-booking", "meaning": "酒店预订；酒店预订凭证", "terms": [{"text": "hotel booking", "ipa": "/həʊˈtel/ /ˈbʊk.ɪŋ/"}], "speech": "hotel booking"},
+            {"id": "accommodation", "meaning": "住宿", "terms": [{"text": "accommodation", "ipa": "/əˌkɒm.əˈdeɪ.ʃən/"}], "speech": "accommodation"},
+            {"id": "purpose", "meaning": "目的", "terms": [{"text": "purpose", "ipa": "/ˈpɜː.pəs/"}], "speech": "purpose"},
+            {"id": "visit", "meaning": "来访；访问", "terms": [{"text": "visit", "ipa": "/ˈvɪz.ɪt/"}], "speech": "visit"},
+            {"id": "holiday", "meaning": "假期；度假", "terms": [{"text": "holiday", "ipa": "/ˈhɒl.ə.deɪ/"}], "speech": "holiday"},
+            {"id": "business", "meaning": "商务；生意", "terms": [{"text": "business", "ipa": "/ˈbɪz.nɪs/"}], "speech": "business"},
+            {"id": "stay", "meaning": "停留；住宿", "terms": [{"text": "stay", "ipa": "/steɪ/"}], "speech": "stay"},
+            {"id": "alone", "meaning": "独自", "terms": [{"text": "alone", "ipa": "/əˈləʊn/"}], "speech": "alone"},
+            {"id": "customs", "meaning": "海关", "terms": [{"text": "customs", "ipa": "/ˈkʌs.təmz/"}], "speech": "customs"},
+            {"id": "carry", "meaning": "携带", "terms": [{"text": "carry", "ipa": "/ˈkær.i/"}], "speech": "carry"},
+            {"id": "goods", "meaning": "物品；商品", "terms": [{"text": "goods", "ipa": "/ɡʊdz/"}], "speech": "goods"},
+            {"id": "item", "meaning": "物品；一件东西", "terms": [{"text": "item", "ipa": "/ˈaɪ.təm/"}], "speech": "item"},
+            {"id": "personal-belongings", "meaning": "个人物品", "terms": [{"text": "personal belongings", "ipa": "/ˈpɜː.sən.əl/ /bɪˈlɒŋ.ɪŋz/"}], "speech": "personal belongings"},
+            {"id": "personal-use", "meaning": "个人使用", "terms": [{"text": "personal use", "ipa": "/ˈpɜː.sən.əl/ /juːs/"}], "speech": "personal use"},
+            {"id": "dried-fruit", "meaning": "水果干", "terms": [{"text": "dried fruit", "ipa": "/draɪd/ /fruːt/"}], "speech": "dried fruit"},
+            {"id": "sealed", "meaning": "密封的", "terms": [{"text": "sealed", "ipa": "/siːld/"}], "speech": "sealed"},
+            {"id": "packet", "meaning": "一小袋；小包", "terms": [{"text": "packet", "ipa": "/ˈpæk.ɪt/"}], "speech": "packet"},
+            {"id": "declare", "meaning": "申报", "terms": [{"text": "declare", "ipa": "/dɪˈkleə/"}], "speech": "declare"},
+            {"id": "allowance", "meaning": "限额", "terms": [{"text": "allowance", "ipa": "/əˈlaʊ.əns/"}], "speech": "allowance"},
+            {"id": "restricted-goods", "meaning": "受限制物品", "terms": [{"text": "restricted goods", "ipa": "/rɪˈstrɪk.tɪd/ /ɡʊdz/"}], "speech": "restricted goods"},
+            {"id": "sample", "meaning": "样品", "terms": [{"text": "sample", "ipa": "/ˈsɑːm.pəl/"}], "speech": "sample"},
+            {"id": "receipt", "meaning": "收据", "terms": [{"text": "receipt", "ipa": "/rɪˈsiːt/"}], "speech": "receipt"},
+            {"id": "folder", "meaning": "文件夹", "terms": [{"text": "folder", "ipa": "/ˈfəʊl.də/"}], "speech": "folder"},
+            {"id": "suitcase", "meaning": "行李箱", "terms": [{"text": "suitcase", "ipa": "/ˈsuːt.keɪs/"}], "speech": "suitcase"},
+            {"id": "whether", "meaning": "是否", "terms": [{"text": "whether", "ipa": "/ˈweð.ə/"}], "speech": "whether"},
+            {"id": "priority", "meaning": "优先；优先权", "terms": [{"text": "priority", "ipa": "/praɪˈɒr.ə.ti/"}], "speech": "priority"},
+            {"id": "privilege", "meaning": "特权；优待", "terms": [{"text": "privilege", "ipa": "/ˈprɪv.əl.ɪdʒ/"}], "speech": "privilege"},
+            {"id": "entire", "meaning": "整个的；全部的", "terms": [{"text": "entire", "ipa": "/ɪnˈtaɪə/"}], "speech": "entire"}
+          ]
+        },
+        {
+          "title": "按场景使用的问答",
+          "items": [
+            {"id": "immigration-purpose", "lead": "来访目的", "kind": "dialogue", "terms": [
+              {"id": "immigration-purpose-question", "role": "工作人员问", "text": "What is the purpose of your visit?", "meaning": "您此次来访的目的是什么？", "speech": "What is the purpose of your visit?"},
+              {"id": "immigration-purpose-answer", "role": "回答示例", "text": "I’m here for a holiday.", "meaning": "我是来度假的。", "speech": "I’m here for a holiday."}
+            ]},
+            {"id": "immigration-duration", "lead": "停留时间", "kind": "dialogue", "terms": [
+              {"id": "immigration-duration-question", "role": "工作人员问", "text": "How long will you be staying?", "meaning": "您会停留多久？", "speech": "How long will you be staying?"},
+              {"id": "immigration-duration-answer", "role": "回答示例", "text": "For ten days.", "meaning": "十天。", "speech": "For ten days."}
+            ]},
+            {"id": "immigration-accommodation", "lead": "住宿地点", "kind": "dialogue", "terms": [
+              {"id": "immigration-accommodation-question", "role": "工作人员问", "text": "Where will you be staying?", "meaning": "您会住在哪里？", "speech": "Where will you be staying?"},
+              {"id": "immigration-accommodation-answer", "role": "回答示例", "text": "At a hotel in Manchester.", "meaning": "住在曼彻斯特的一家酒店。", "speech": "At a hotel in Manchester."}
+            ]},
+            {"id": "immigration-return-flight", "lead": "返程日期", "kind": "dialogue", "terms": [
+              {"id": "immigration-return-flight-question", "role": "工作人员问", "text": "When is your return flight?", "meaning": "您的返程航班是什么时候？", "speech": "When is your return flight?"},
+              {"id": "immigration-return-flight-answer", "role": "回答示例", "text": "On the eighteenth of October.", "meaning": "十月十八日。", "speech": "On the eighteenth of October."}
+            ]},
+            {"id": "immigration-first-visit", "lead": "首次来访", "kind": "dialogue", "terms": [
+              {"id": "immigration-first-visit-question", "role": "工作人员问", "text": "Is this your first visit?", "meaning": "这是您第一次来吗？", "speech": "Is this your first visit?"},
+              {"id": "immigration-first-visit-yes", "role": "回答示例", "text": "Yes, it is.", "meaning": "是的。", "speech": "Yes, it is."},
+              {"id": "immigration-first-visit-no", "role": "回答示例", "text": "No, I’ve been here before.", "meaning": "不是，我以前来过。", "speech": "No, I’ve been here before."}
+            ]},
+            {"id": "immigration-companions", "lead": "同行情况", "kind": "dialogue", "terms": [
+              {"id": "immigration-companions-question", "role": "工作人员问", "text": "Are you travelling alone?", "meaning": "您是独自旅行吗？", "speech": "Are you travelling alone?"},
+              {"id": "immigration-companions-answer", "role": "回答示例", "text": "I’m travelling with my friends.", "meaning": "我和朋友一起旅行。", "speech": "I’m travelling with my friends."}
+            ]},
+            {"id": "customs-food", "lead": "携带食物", "kind": "dialogue", "terms": [
+              {"id": "customs-food-question", "role": "工作人员问", "text": "Are you carrying any food?", "meaning": "您携带食物了吗？", "speech": "Are you carrying any food?"},
+              {"id": "customs-food-answer", "role": "回答示例", "text": "Yes, some dried fruit in a sealed packet.", "meaning": "是的，有一些密封包装的水果干。", "speech": "Yes, some dried fruit in a sealed packet."}
+            ]},
+            {"id": "customs-declaration", "lead": "申报情况", "kind": "dialogue", "terms": [
+              {"id": "customs-declaration-question", "role": "工作人员问", "text": "Have you declared it?", "meaning": "您已经申报这件物品了吗？", "speech": "Have you declared it?"},
+              {"id": "customs-declaration-answer", "role": "回答示例", "text": "I’m not sure whether I need to. Could you help me, please?", "meaning": "我不确定是否需要申报。能帮我一下吗？", "speech": "I’m not sure whether I need to. Could you help me, please?"}
+            ]},
+            {"id": "customs-personal-use", "lead": "物品用途", "kind": "dialogue", "terms": [
+              {"id": "customs-personal-use-question", "role": "工作人员问", "text": "Are these goods for your personal use?", "meaning": "这些物品是您个人使用的吗？", "speech": "Are these goods for your personal use?"},
+              {"id": "customs-personal-use-answer", "role": "回答示例", "text": "No. They’re samples for my business.", "meaning": "不是，是用于业务的样品。", "speech": "No. They’re samples for my business."}
+            ]},
+            {"id": "customs-receipts", "lead": "出示收据", "kind": "dialogue", "terms": [
+              {"id": "customs-receipts-question", "role": "工作人员问", "text": "Do you have any receipts?", "meaning": "您有收据吗？", "speech": "Do you have any receipts?"},
+              {"id": "customs-receipts-answer", "role": "回答示例", "text": "Yes. They’re in this folder.", "meaning": "有，在这个文件夹里。", "speech": "Yes. They’re in this folder."}
+            ]}
+          ]
+        }
+      ]
     }
   ]
 };
