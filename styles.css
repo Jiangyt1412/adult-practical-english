@@ -178,6 +178,11 @@ h1, h2, p { margin-top: 0; }
 .term { min-width: 0; }
 .word { display: block; overflow-wrap: anywhere; color: var(--ink); font-size: 1.28rem; font-weight: 800; line-height: 1.2; }
 .ipa { display: block; margin-top: 3px; color: var(--teal-700); font-size: 1rem; line-height: 1.4; overflow-wrap: anywhere; }
+.dialogue-card .terms { gap: 20px; }
+.dialogue-card .term + .term { padding-top: 20px; border-top: 1px solid var(--line); }
+.dialogue-role { margin: 0 0 6px; color: var(--peach); font-size: 0.82rem; font-weight: 800; }
+.term-meaning { margin: 8px 0 0; color: var(--muted); }
+.dialogue-actions { margin-top: 12px; }
 .word-details {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -83,6 +83,8 @@
   function createPracticeCard(lesson, item) {
     const card = document.createElement("article");
     card.className = "practice-card";
+    const isDialogue = item.kind === "dialogue";
+    if (isDialogue) card.classList.add("dialogue-card");
     card.dataset.itemId = item.id;
 
     if (item.lead) {
@@ -94,18 +96,39 @@
 
     const terms = document.createElement("div");
     terms.className = "terms";
-    if (item.terms.length > 1) terms.classList.add("has-multiple");
-    if (item.terms.length === 3) terms.classList.add("has-three");
+    if (!isDialogue && item.terms.length > 1) terms.classList.add("has-multiple");
+    if (!isDialogue && item.terms.length === 3) terms.classList.add("has-three");
     item.terms.forEach(function (term) {
       const termBlock = document.createElement("div");
       termBlock.className = "term";
+      if (term.role) {
+        const role = document.createElement("p");
+        role.className = "dialogue-role";
+        role.textContent = term.role;
+        termBlock.append(role);
+      }
       const word = document.createElement("span");
       word.className = "word";
       word.textContent = term.text;
-      const ipa = document.createElement("span");
-      ipa.className = "ipa";
-      ipa.textContent = term.ipa;
-      termBlock.append(word, ipa);
+      termBlock.append(word);
+      if (term.ipa) {
+        const ipa = document.createElement("span");
+        ipa.className = "ipa";
+        ipa.textContent = term.ipa;
+        termBlock.append(ipa);
+      }
+      if (term.meaning) {
+        const meaning = document.createElement("p");
+        meaning.className = "term-meaning";
+        meaning.textContent = term.meaning;
+        termBlock.append(meaning);
+      }
+      if (isDialogue) {
+        const lineActions = document.createElement("div");
+        lineActions.className = "card-actions dialogue-actions";
+        appendAudioButtons(lineActions, lesson.id, term.id, term.text);
+        termBlock.append(lineActions);
+      }
       terms.append(termBlock);
     });
     card.append(terms);
@@ -133,16 +156,7 @@
 
     const actions = document.createElement("div");
     actions.className = "card-actions";
-    ["ryan", "sonia"].forEach(function (voice) {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "audio-button";
-      button.dataset.audio = "./assets/audio/" + lesson.id + "/" + voice + "/" + item.id + ".wav";
-      button.dataset.voice = voice;
-      button.dataset.label = capitalize(voice);
-      button.textContent = "▶ " + button.dataset.label;
-      actions.append(button);
-    });
+    if (!isDialogue) appendAudioButtons(actions, lesson.id, item.id, item.terms[0].text);
 
     const toggle = document.createElement("button");
     toggle.type = "button";
@@ -153,6 +167,20 @@
     actions.append(toggle);
     card.append(actions);
     return card;
+  }
+
+  function appendAudioButtons(actions, lessonId, audioId, text) {
+    ["ryan", "sonia"].forEach(function (voice) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "audio-button";
+      button.dataset.audio = "./assets/audio/" + lessonId + "/" + voice + "/" + audioId + ".wav";
+      button.dataset.voice = voice;
+      button.dataset.label = capitalize(voice);
+      button.textContent = "▶ " + button.dataset.label;
+      button.setAttribute("aria-label", "Play " + text + " with " + button.dataset.label);
+      actions.append(button);
+    });
   }
 
   function appendDetail(list, label, value) {

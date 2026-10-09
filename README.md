@@ -9,7 +9,7 @@
 ### 主要功能
 
 - 移动端优先，兼容手机和桌面浏览器
-- Ryan 与 Sonia 两套英式英语本地音频
+- Ryan 与 Sonia 两套英式英语本地单词音频
 - 单词、短语、IPA 与重点辨音练习
 - 使用浏览器本地存储保存练习进度
 - 支持在浏览器中录音和回放，不上传录音
@@ -25,6 +25,8 @@ The site uses plain HTML, CSS, and JavaScript. It has no backend, account system
 adult-practical-english/
 ├── index.html
 ├── lesson-01.html
+├── lesson-02.html
+├── lesson-03.html
 ├── styles.css
 ├── app.js
 ├── manifest.json
@@ -34,9 +36,10 @@ adult-practical-english/
 │   └── lessons.js
 ├── assets/
 │   ├── icons/
-│   └── audio/lesson-01/
-│       ├── ryan/
-│       └── sonia/
+│   └── audio/
+│       ├── lesson-01/
+│       ├── lesson-02/
+│       └── lesson-03/
 ├── scripts/
 │   ├── generate_audio.py
 │   └── requirements.txt
@@ -83,7 +86,7 @@ Run:
 python scripts/generate_audio.py
 ```
 
-Then confirm the summary says 74 files, 37 Ryan files, 37 Sonia files, and `All QC passed: Yes`. The target format is WAV, 24,000 Hz, 16-bit PCM, mono, with a peak no higher than -1 dBFS.
+Then confirm the summary says 284 files, 142 Ryan files, 142 Sonia files, and `All QC passed: Yes`. The target format is WAV, 24,000 Hz, 16-bit PCM, mono, with a peak no higher than -1 dBFS. These checks cover audio format and signal quality, not a human assessment of pronunciation.
 
 ## Deploy to GitHub Pages
 
@@ -129,14 +132,20 @@ Deployment roles:
 
 The website does not use the GitHub API at runtime.
 
-## Add Lesson 2
+## Published lessons
+
+- Lesson 1: Meeting People & Pronunciation Basics
+- Lesson 2: British English IPA Review, with 44 items covering monophthongs, diphthongs, and consonants
+- Lesson 3: Airport Review · 机场口语必背, with 38 vocabulary entries, 6 check-in question-and-answer groups, and 10 useful phrases. Each dialogue turn has its own Ryan and Sonia playback. English text, supplied IPA, Chinese meanings, and item order follow the source Word homework.
+
+## Add another lesson
 
 1. Add a new lesson object in `data/lessons.js`; the homepage creates its card automatically.
-2. Copy `lesson-01.html` to `lesson-02.html`, then change `data-lesson="lesson-01"` to `data-lesson="lesson-02"` and update the page title and description.
-3. Create `assets/audio/lesson-02/ryan/` and `assets/audio/lesson-02/sonia/`.
-4. Extend `scripts/generate_audio.py` to select the new lesson, or generalise the lesson selector before generating its audio.
-5. Add `lesson-02.html` to `APP_SHELL` in `sw.js` and increment `CACHE_NAME` so returning students receive the update.
-6. Test every audio path and practise toggle before deployment.
+2. Copy an existing lesson page, change its `data-lesson` value, and update the page title and description.
+3. Create matching Ryan and Sonia audio folders under `assets/audio/`.
+4. Run `scripts/generate_audio.py` to generate missing audio and refresh the combined QC report.
+5. Add the new lesson page to `APP_SHELL` in `sw.js` and increment `CACHE_NAME` so returning students receive the update.
+6. Test every audio path and practice toggle before deployment.
 
 ## Browser notes
 

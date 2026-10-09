@@ -12,6 +12,8 @@ DIST = ROOT / "dist"
 FILES = [
     "index.html",
     "lesson-01.html",
+    "lesson-02.html",
+    "lesson-03.html",
     "styles.css",
     "app.js",
     "manifest.json",

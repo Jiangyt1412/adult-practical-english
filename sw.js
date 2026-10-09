@@ -1,9 +1,10 @@
-const CACHE_NAME = "adult-practical-english-v6";
+const CACHE_NAME = "adult-practical-english-v7";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./lesson-01.html",
   "./lesson-02.html",
+  "./lesson-03.html",
   "./styles.css",
   "./app.js",
   "./data/lessons.js",

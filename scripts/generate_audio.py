@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate and quality-check all local Lesson 1 audio files."""
+"""Generate and quality-check local audio for every published lesson."""
 
 from __future__ import annotations
 
@@ -32,14 +32,13 @@ def project_root() -> Path:
     return Path(__file__).resolve().parent.parent
 
 
-def load_items(root: Path) -> list[dict]:
+def load_lessons(root: Path) -> list[dict]:
     source = (root / "data" / "lessons.js").read_text(encoding="utf-8")
     prefix = "window.ADULT_ENGLISH_LESSONS = "
     if not source.startswith(prefix) or not source.rstrip().endswith(";"):
         raise RuntimeError("data/lessons.js is not in the expected JSON-compatible format")
     payload = json.loads(source[len(prefix):].rstrip()[:-1])
-    lesson = next(item for item in payload["lessons"] if item["id"] == "lesson-01")
-    return [item for section in lesson["sections"] for item in section["items"]]
+    return payload["lessons"]
 
 
 def find_ffmpeg() -> str:
@@ -51,6 +50,18 @@ def find_ffmpeg() -> str:
         return imageio_ffmpeg.get_ffmpeg_exe()
     except (ImportError, RuntimeError) as exc:
         raise RuntimeError("ffmpeg was not found; install ffmpeg or imageio-ffmpeg") from exc
+
+
+def audio_items(lesson: dict) -> list[dict]:
+    """Give each dialogue turn its own recording, preserving the source text."""
+    entries = []
+    for section in lesson["sections"]:
+        for item in section["items"]:
+            if item.get("kind") == "dialogue":
+                entries.extend(item["terms"])
+            else:
+                entries.append(item)
+    return entries
 
 
 def learner_text(text: str) -> str:
@@ -158,7 +169,7 @@ def write_reports(root: Path, records: list[dict]) -> None:
     ]
     for item in records:
         rows.append(
-            f"| `{item['filename']}` | {item['voice'].title()} | {item['sample_rate']} | {item['bit_depth']} | "
+            f"| `{item['relative_path']}` | {item['voice'].title()} | {item['sample_rate']} | {item['bit_depth']} | "
             f"{item['channels']} | {item['peak_dbfs']} | {'Yes' if item['clipping_detected'] else 'No'} | "
             f"{'Yes' if item['abnormal_transient_detected'] else 'No'} | {'Pass' if item['qc_passed'] else 'Fail'} |"
         )
@@ -167,24 +178,26 @@ def write_reports(root: Path, records: list[dict]) -> None:
 
 async def generate(force: bool) -> int:
     root = project_root()
-    items = load_items(root)
+    lessons = load_lessons(root)
     ffmpeg = find_ffmpeg()
     records: list[dict] = []
 
     with tempfile.TemporaryDirectory(prefix="adult-english-audio-") as temp_dir:
         temp = Path(temp_dir)
-        for voice_key, voice_name in VOICES.items():
-            destination = root / "assets" / "audio" / "lesson-01" / voice_key
-            destination.mkdir(parents=True, exist_ok=True)
-            for index, item in enumerate(items, start=1):
-                wav_path = destination / f"{item['id']}.wav"
-                if force or not wav_path.exists():
-                    mp3_path = temp / f"{voice_key}-{item['id']}.mp3"
-                    print(f"[{voice_key} {index:02d}/{len(items)}] {item['id']}")
-                    await synthesize(item["speech"], voice_name, mp3_path)
-                    run_ffmpeg(ffmpeg, mp3_path, wav_path)
-                    enforce_peak(ffmpeg, wav_path)
-                records.append(inspect(wav_path, voice_key, voice_name))
+        for lesson in lessons:
+            items = audio_items(lesson)
+            for voice_key, voice_name in VOICES.items():
+                destination = root / "assets" / "audio" / lesson["id"] / voice_key
+                destination.mkdir(parents=True, exist_ok=True)
+                for index, item in enumerate(items, start=1):
+                    wav_path = destination / f"{item['id']}.wav"
+                    if force or not wav_path.exists():
+                        mp3_path = temp / f"{lesson['id']}-{voice_key}-{item['id']}.mp3"
+                        print(f"[{lesson['id']} {voice_key} {index:02d}/{len(items)}] {item['id']}")
+                        await synthesize(item["speech"], voice_name, mp3_path)
+                        run_ffmpeg(ffmpeg, mp3_path, wav_path)
+                        enforce_peak(ffmpeg, wav_path)
+                    records.append(inspect(wav_path, voice_key, voice_name))
 
     records.sort(key=lambda item: (item["voice"], item["filename"]))
     write_reports(root, records)
