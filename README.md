@@ -141,6 +141,8 @@ The website does not use the GitHub API at runtime.
 - Lesson 3: Airport Review, with 38 vocabulary entries, 6 check-in question-and-answer groups, and 10 useful phrases. Each dialogue turn has its own Ryan and Sonia playback. English text, supplied IPA, Chinese meanings, and item order follow the source Word homework. The standalone “aisle seat” audio uses a slower pace and a short pause between words for clearer practice.
 - Lesson 4: Immigration & Customs Review, with 32 vocabulary entries and 10 scenario-based question-and-answer groups. Each question and example answer has its own Ryan and Sonia playback, including separate first-visit answer alternatives. Wording, IPA, Chinese meanings, scenario labels, and order follow the source Word homework.
 
+The Lesson 4 Ryan versions of “passport” and “priority” use a slightly slower contextual reading. The generator extracts each complete final word using word-boundary timestamps; the carrier phrase is not included in the lesson audio. Sonia files and displayed Word content are unchanged. These regeneration and signal checks do not replace a listening review of pronunciation.
+
 ## Add another lesson
 
 1. Add a new lesson object in `data/lessons.js`; the homepage creates its card automatically.

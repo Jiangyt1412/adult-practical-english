@@ -139,13 +139,13 @@
 | `assets/audio/lesson-04/ryan/packet.wav` | Ryan | 24000 | 16 | 1 | -4.62 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/passport.wav` | Ryan | 24000 | 16 | 1 | -5.55 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/passport.wav` | Ryan | 24000 | 16 | 1 | -5.55 | No | No | Pass |
-| `assets/audio/lesson-04/ryan/passport.wav` | Ryan | 24000 | 16 | 1 | -5.55 | No | No | Pass |
+| `assets/audio/lesson-04/ryan/passport.wav` | Ryan | 24000 | 16 | 1 | -6.72 | No | No | Pass |
 | `assets/audio/lesson-01/ryan/perfect.wav` | Ryan | 24000 | 16 | 1 | -4.57 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/personal-belongings.wav` | Ryan | 24000 | 16 | 1 | -4.85 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/personal-use.wav` | Ryan | 24000 | 16 | 1 | -5.04 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/place-your-bag-on-the-belt.wav` | Ryan | 24000 | 16 | 1 | -7.47 | No | No | Pass |
 | `assets/audio/lesson-01/ryan/pretty-busy.wav` | Ryan | 24000 | 16 | 1 | -4.28 | No | No | Pass |
-| `assets/audio/lesson-04/ryan/priority.wav` | Ryan | 24000 | 16 | 1 | -4.1 | No | No | Pass |
+| `assets/audio/lesson-04/ryan/priority.wav` | Ryan | 24000 | 16 | 1 | -7.71 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/privilege.wav` | Ryan | 24000 | 16 | 1 | -4.9 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/privilege.wav` | Ryan | 24000 | 16 | 1 | -4.9 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/proceed.wav` | Ryan | 24000 | 16 | 1 | -2.96 | No | No | Pass |

@@ -96,9 +96,53 @@ def read_pcm(path: Path) -> tuple[wave._wave_params, tuple[int, ...]]:
     return params, samples
 
 
-async def generate_item_audio(item: dict, voice: str, ffmpeg: str, temp: Path, prefix: str, output: Path) -> None:
+async def generate_context_word(item: dict, settings: dict, voice: str, ffmpeg: str, temp: Path, prefix: str, output: Path) -> None:
+    """Extract one complete final word using the synthesizer's word timestamps."""
+    word = item["speech"]
+    context = settings["context"]
+    if len(word.split()) != 1 or context.rstrip(" .!?:;").split()[-1].casefold() != word.casefold():
+        raise ValueError("Context extraction must end with the original single word")
+
+    mp3 = temp / f"{prefix}-context.mp3"
+    metadata = temp / f"{prefix}-words.jsonl"
+    full_wav = temp / f"{prefix}-context.wav"
+    communicate = edge_tts.Communicate(context, voice, rate=settings.get("rate", "+0%"), boundary="WordBoundary")
+    await communicate.save(str(mp3), str(metadata))
+    boundaries = [json.loads(line) for line in metadata.read_text(encoding="utf-8").splitlines()]
+    if not boundaries or boundaries[-1]["text"].rstrip(".!?:;").casefold() != word.casefold():
+        raise ValueError("The final word timestamp did not match the original word")
+    target = boundaries[-1]
+    run_ffmpeg(ffmpeg, mp3, full_wav)
+    _, samples = read_pcm(full_wav)
+    start = max(0, round(TARGET_SAMPLE_RATE * (target["offset"] / 10_000_000 - 0.06)))
+    if len(boundaries) > 1:
+        previous_end = (boundaries[-2]["offset"] + boundaries[-2]["duration"]) / 10_000_000
+        if start / TARGET_SAMPLE_RATE < previous_end:
+            raise ValueError("Insufficient pause to extract the word without the carrier phrase")
+    segment = samples[start:]
+    audible = [index for index, sample in enumerate(segment) if abs(sample) > 80]
+    if not audible:
+        raise ValueError(f"Empty extracted word: {word}")
+    end = min(len(segment), audible[-1] + round(TARGET_SAMPLE_RATE * 0.08) + 1)
+    trimmed = temp / f"{prefix}-word.wav"
+    with wave.open(str(trimmed), "wb") as wav:
+        wav.setnchannels(TARGET_CHANNELS)
+        wav.setsampwidth(TARGET_SAMPLE_WIDTH)
+        wav.setframerate(TARGET_SAMPLE_RATE)
+        wav.writeframes(struct.pack(f"<{end}h", *segment[:end]))
+    run_ffmpeg(ffmpeg, trimmed, output)
+    enforce_peak(ffmpeg, output)
+    print(f"  {word}: extracted one continuous word from {start / TARGET_SAMPLE_RATE:.3f}s; voice={voice}")
+
+
+async def generate_item_audio(item: dict, voice: str, ffmpeg: str, temp: Path, prefix: str, output: Path, voice_key: str | None = None) -> None:
     """Apply optional teaching pace without changing the displayed source wording."""
-    settings = item.get("audio", {})
+    settings = dict(item.get("audio", {}))
+    voice_key = voice_key or next((key for key, name in VOICES.items() if name == voice), None)
+    settings.update(settings.pop("voices", {}).get(voice_key, {}))
+    if settings.get("context"):
+        await generate_context_word(item, settings, voice, ffmpeg, temp, prefix, output)
+        return
     parts = settings.get("parts")
     if not parts:
         mp3 = temp / f"{prefix}.mp3"
@@ -213,7 +257,7 @@ def write_reports(root: Path, records: list[dict]) -> None:
     (root / "docs" / "AUDIO_REPORT.md").write_text("\n".join(rows) + "\n", encoding="utf-8")
 
 
-async def generate(force: bool, lesson_filter: str | None = None, item_filter: str | None = None) -> int:
+async def generate(force: bool, lesson_filter: str | None = None, item_filter: str | None = None, voice_filter: str | None = None) -> int:
     root = project_root()
     lessons = load_lessons(root)
     ffmpeg = find_ffmpeg()
@@ -228,11 +272,11 @@ async def generate(force: bool, lesson_filter: str | None = None, item_filter: s
                 destination.mkdir(parents=True, exist_ok=True)
                 for index, item in enumerate(items, start=1):
                     wav_path = destination / f"{item['id']}.wav"
-                    selected = (not lesson_filter or lesson["id"] == lesson_filter) and (not item_filter or item["id"] == item_filter)
+                    selected = (not lesson_filter or lesson["id"] == lesson_filter) and (not item_filter or item["id"] == item_filter) and (not voice_filter or voice_key == voice_filter)
                     if (force and selected) or not wav_path.exists():
                         print(f"[{lesson['id']} {voice_key} {index:02d}/{len(items)}] {item['id']}")
                         prefix = f"{lesson['id']}-{voice_key}-{item['id']}"
-                        await generate_item_audio(item, voice_name, ffmpeg, temp, prefix, wav_path)
+                        await generate_item_audio(item, voice_name, ffmpeg, temp, prefix, wav_path, voice_key)
                     records.append(inspect(wav_path, voice_key, voice_name))
 
     records.sort(key=lambda item: (item["voice"], item["filename"]))
@@ -250,8 +294,9 @@ def main() -> int:
     parser.add_argument("--force", action="store_true", help="Regenerate audio files that already exist")
     parser.add_argument("--lesson", help="Limit forced regeneration to this lesson ID")
     parser.add_argument("--item", help="Limit forced regeneration to this audio item ID")
+    parser.add_argument("--voice", choices=VOICES, help="Limit forced regeneration to one voice")
     args = parser.parse_args()
-    return asyncio.run(generate(args.force, args.lesson, args.item))
+    return asyncio.run(generate(args.force, args.lesson, args.item, args.voice))
 
 
 if __name__ == "__main__":

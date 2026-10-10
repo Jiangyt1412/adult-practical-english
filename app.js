@@ -175,7 +175,8 @@
       button.type = "button";
       button.className = "audio-button";
       button.dataset.audio = "./assets/audio/" + lessonId + "/" + voice + "/" + audioId + ".wav";
-      if (revision) button.dataset.audio += "?v=" + encodeURIComponent(revision);
+      const voiceRevision = revision && typeof revision === "object" ? revision[voice] : revision;
+      if (voiceRevision) button.dataset.audio += "?v=" + encodeURIComponent(voiceRevision);
       button.dataset.voice = voice;
       button.dataset.label = capitalize(voice);
       button.textContent = "▶ " + button.dataset.label;

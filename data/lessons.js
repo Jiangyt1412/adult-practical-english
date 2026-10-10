@@ -248,7 +248,7 @@ window.ADULT_ENGLISH_LESSONS = {
           "title": "单词表",
           "items": [
             {"id": "immigration", "meaning": "入境检查", "terms": [{"text": "immigration", "ipa": "/ˌɪm.ɪˈɡreɪ.ʃən/"}], "speech": "immigration"},
-            {"id": "passport", "meaning": "护照", "terms": [{"text": "passport", "ipa": "/ˈpɑːs.pɔːt/"}], "speech": "passport"},
+            {"id": "passport", "meaning": "护照", "terms": [{"text": "passport", "ipa": "/ˈpɑːs.pɔːt/"}], "speech": "passport", "audio": {"version": {"ryan": "2"}, "voices": {"ryan": {"context": "The word is: passport.", "rate": "-8%"}}}},
             {"id": "return-ticket", "meaning": "往返机票", "terms": [{"text": "return ticket", "ipa": "/rɪˈtɜːn ˌtɪk.ɪt/"}], "speech": "return ticket"},
             {"id": "return-flight", "meaning": "返程航班", "terms": [{"text": "return flight", "ipa": "/rɪˈtɜːn/ /flaɪt/"}], "speech": "return flight"},
             {"id": "hotel-booking", "meaning": "酒店预订；酒店预订凭证", "terms": [{"text": "hotel booking", "ipa": "/həʊˈtel/ /ˈbʊk.ɪŋ/"}], "speech": "hotel booking"},
@@ -276,7 +276,7 @@ window.ADULT_ENGLISH_LESSONS = {
             {"id": "folder", "meaning": "文件夹", "terms": [{"text": "folder", "ipa": "/ˈfəʊl.də/"}], "speech": "folder"},
             {"id": "suitcase", "meaning": "行李箱", "terms": [{"text": "suitcase", "ipa": "/ˈsuːt.keɪs/"}], "speech": "suitcase"},
             {"id": "whether", "meaning": "是否", "terms": [{"text": "whether", "ipa": "/ˈweð.ə/"}], "speech": "whether"},
-            {"id": "priority", "meaning": "优先；优先权", "terms": [{"text": "priority", "ipa": "/praɪˈɒr.ə.ti/"}], "speech": "priority"},
+            {"id": "priority", "meaning": "优先；优先权", "terms": [{"text": "priority", "ipa": "/praɪˈɒr.ə.ti/"}], "speech": "priority", "audio": {"version": {"ryan": "2"}, "voices": {"ryan": {"context": "The word is: priority.", "rate": "-8%"}}}},
             {"id": "privilege", "meaning": "特权；优待", "terms": [{"text": "privilege", "ipa": "/ˈprɪv.əl.ɪdʒ/"}], "speech": "privilege"},
             {"id": "entire", "meaning": "整个的；全部的", "terms": [{"text": "entire", "ipa": "/ɪnˈtaɪə/"}], "speech": "entire"}
           ]
