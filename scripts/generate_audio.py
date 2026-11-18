@@ -147,10 +147,25 @@ async def generate_item_audio(item: dict, voice: str, ffmpeg: str, temp: Path, p
     if not parts:
         mp3 = temp / f"{prefix}.mp3"
         speech_text = settings.get("text", item["speech"])
-        source_letters = "".join(char.casefold() for char in item["speech"] if char.isalnum())
-        spoken_letters = "".join(char.casefold() for char in speech_text if char.isalnum())
-        if source_letters != spoken_letters:
-            raise ValueError("Speech text overrides may change punctuation and spacing only")
+        pronunciation = settings.get("pronunciation")
+        if pronunciation is not None:
+            # Explicit pronunciation cues retain their target IPA and reference.
+            source_ipas = {term.get("ipa") for term in item.get("terms", []) if term.get("ipa")}
+            if (
+                not isinstance(pronunciation, dict)
+                or pronunciation.get("method") != "homophones"
+                or pronunciation.get("ipa") not in source_ipas
+                or not isinstance(pronunciation.get("text"), str)
+                or not pronunciation["text"].strip()
+                or not str(pronunciation.get("reference", "")).startswith("https://")
+            ):
+                raise ValueError("Pronunciation cues require matching source IPA, text and a reference")
+            speech_text = pronunciation["text"]
+        else:
+            source_letters = "".join(char.casefold() for char in item["speech"] if char.isalnum())
+            spoken_letters = "".join(char.casefold() for char in speech_text if char.isalnum())
+            if source_letters != spoken_letters:
+                raise ValueError("Speech text overrides may change punctuation and spacing only")
         await synthesize(speech_text, voice, mp3, settings.get("rate"))
         run_ffmpeg(ffmpeg, mp3, output)
         enforce_peak(ffmpeg, output)

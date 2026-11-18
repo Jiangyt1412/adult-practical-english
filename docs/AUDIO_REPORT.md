@@ -1,8 +1,8 @@
 # Audio QC Report
 
-- Total WAV files: 510
-- Ryan: 255
-- Sonia: 255
+- Total WAV files: 546
+- Ryan: 273
+- Sonia: 273
 - All QC passed: Yes
 - Master format: WAV, 24,000 Hz, 16-bit PCM, mono
 - Peak limit: -1.0 dBFS
@@ -11,6 +11,7 @@
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | `assets/audio/lesson-02/ryan/about.wav` | Ryan | 24000 | 16 | 1 | -4.57 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/accommodation.wav` | Ryan | 24000 | 16 | 1 | -5.37 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/adapter.wav` | Ryan | 24000 | 16 | 1 | -4.2 | No | No | Pass |
 | `assets/audio/lesson-05/ryan/air-conditioning.wav` | Ryan | 24000 | 16 | 1 | -4.26 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/aisle-seat.wav` | Ryan | 24000 | 16 | 1 | -5.28 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/allowance.wav` | Ryan | 24000 | 16 | 1 | -4.79 | No | No | Pass |
@@ -77,10 +78,12 @@
 | `assets/audio/lesson-04/ryan/declare.wav` | Ryan | 24000 | 16 | 1 | -5.06 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/delayed.wav` | Ryan | 24000 | 16 | 1 | -5.99 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/departure.wav` | Ryan | 24000 | 16 | 1 | -3.66 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/deposit.wav` | Ryan | 24000 | 16 | 1 | -4.02 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/destination.wav` | Ryan | 24000 | 16 | 1 | -5.61 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/dog.wav` | Ryan | 24000 | 16 | 1 | -6.32 | No | No | Pass |
 | `assets/audio/lesson-05/ryan/double-room.wav` | Ryan | 24000 | 16 | 1 | -5.73 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/dried-fruit.wav` | Ryan | 24000 | 16 | 1 | -3.9 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/duvet.wav` | Ryan | 24000 | 16 | 1 | -4.92 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/emergency.wav` | Ryan | 24000 | 16 | 1 | -5.23 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/empty-your-pockets.wav` | Ryan | 24000 | 16 | 1 | -4.74 | No | No | Pass |
 | `assets/audio/lesson-05/ryan/en-suite.wav` | Ryan | 24000 | 16 | 1 | -5.1 | No | No | Pass |
@@ -106,6 +109,7 @@
 | `assets/audio/lesson-04/ryan/goods.wav` | Ryan | 24000 | 16 | 1 | -6.07 | No | No | Pass |
 | `assets/audio/lesson-01/ryan/grass.wav` | Ryan | 24000 | 16 | 1 | -4.78 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/hair.wav` | Ryan | 24000 | 16 | 1 | -3.97 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/hairdryer.wav` | Ryan | 24000 | 16 | 1 | -3.86 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/hand-luggage.wav` | Ryan | 24000 | 16 | 1 | -4.85 | No | No | Pass |
 | `assets/audio/lesson-05/ryan/heating.wav` | Ryan | 24000 | 16 | 1 | -4.93 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/holiday.wav` | Ryan | 24000 | 16 | 1 | -3.67 | No | No | Pass |
@@ -138,6 +142,7 @@
 | `assets/audio/lesson-05/ryan/hotel-phrase-23.wav` | Ryan | 24000 | 16 | 1 | -5.18 | No | No | Pass |
 | `assets/audio/lesson-05/ryan/hotel-phrase-24.wav` | Ryan | 24000 | 16 | 1 | -5.03 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/hotel.wav` | Ryan | 24000 | 16 | 1 | -3.87 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/housekeeping.wav` | Ryan | 24000 | 16 | 1 | -4.84 | No | No | Pass |
 | `assets/audio/lesson-01/ryan/how-long-are-you-staying.wav` | Ryan | 24000 | 16 | 1 | -5.21 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/how-much-is-it.wav` | Ryan | 24000 | 16 | 1 | -3.97 | No | No | Pass |
 | `assets/audio/lesson-01/ryan/id-like-to.wav` | Ryan | 24000 | 16 | 1 | -4.77 | No | No | Pass |
@@ -158,11 +163,14 @@
 | `assets/audio/lesson-04/ryan/immigration-return-flight-question.wav` | Ryan | 24000 | 16 | 1 | -4.27 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/immigration.wav` | Ryan | 24000 | 16 | 1 | -4.02 | No | No | Pass |
 | `assets/audio/lesson-05/ryan/included.wav` | Ryan | 24000 | 16 | 1 | -5.7 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/iron.wav` | Ryan | 24000 | 16 | 1 | -5.89 | No | No | Pass |
 | `assets/audio/lesson-01/ryan/is-breakfast-included.wav` | Ryan | 24000 | 16 | 1 | -4.29 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/item.wav` | Ryan | 24000 | 16 | 1 | -4.55 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/job.wav` | Ryan | 24000 | 16 | 1 | -4.23 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/kettle.wav` | Ryan | 24000 | 16 | 1 | -3.77 | No | No | Pass |
 | `assets/audio/lesson-05/ryan/key-card.wav` | Ryan | 24000 | 16 | 1 | -4.55 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/key.wav` | Ryan | 24000 | 16 | 1 | -3.63 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/laundry.wav` | Ryan | 24000 | 16 | 1 | -2.73 | No | No | Pass |
 | `assets/audio/lesson-05/ryan/lift.wav` | Ryan | 24000 | 16 | 1 | -5.14 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/light.wav` | Ryan | 24000 | 16 | 1 | -5.67 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/look.wav` | Ryan | 24000 | 16 | 1 | -4.94 | No | No | Pass |
@@ -191,6 +199,7 @@
 | `assets/audio/lesson-04/ryan/personal-use.wav` | Ryan | 24000 | 16 | 1 | -5.04 | No | No | Pass |
 | `assets/audio/lesson-05/ryan/pillow.wav` | Ryan | 24000 | 16 | 1 | -4.56 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/place-your-bag-on-the-belt.wav` | Ryan | 24000 | 16 | 1 | -7.47 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/plug-adapter.wav` | Ryan | 24000 | 16 | 1 | -3.93 | No | No | Pass |
 | `assets/audio/lesson-01/ryan/pretty-busy.wav` | Ryan | 24000 | 16 | 1 | -4.28 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/priority.wav` | Ryan | 24000 | 16 | 1 | -7.71 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/privilege.wav` | Ryan | 24000 | 16 | 1 | -4.9 | No | No | Pass |
@@ -215,6 +224,8 @@
 | `assets/audio/lesson-04/ryan/return-flight.wav` | Ryan | 24000 | 16 | 1 | -4.56 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/return-ticket.wav` | Ryan | 24000 | 16 | 1 | -4.29 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/right.wav` | Ryan | 24000 | 16 | 1 | -4.12 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/room-service.wav` | Ryan | 24000 | 16 | 1 | -4.67 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/safe.wav` | Ryan | 24000 | 16 | 1 | -4.07 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/sample.wav` | Ryan | 24000 | 16 | 1 | -4.01 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/scale.wav` | Ryan | 24000 | 16 | 1 | -3.82 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/sealed.wav` | Ryan | 24000 | 16 | 1 | -4.32 | No | No | Pass |
@@ -222,10 +233,13 @@
 | `assets/audio/lesson-02/ryan/seat.wav` | Ryan | 24000 | 16 | 1 | -5.74 | No | No | Pass |
 | `assets/audio/lesson-01/ryan/security-check.wav` | Ryan | 24000 | 16 | 1 | -3.95 | No | No | Pass |
 | `assets/audio/lesson-01/ryan/set.wav` | Ryan | 24000 | 16 | 1 | -4.12 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/shampoo.wav` | Ryan | 24000 | 16 | 1 | -4.46 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/she.wav` | Ryan | 24000 | 16 | 1 | -3.97 | No | No | Pass |
 | `assets/audio/lesson-01/ryan/sheep.wav` | Ryan | 24000 | 16 | 1 | -3.87 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/sheet.wav` | Ryan | 24000 | 16 | 1 | -4.33 | No | No | Pass |
 | `assets/audio/lesson-01/ryan/ship.wav` | Ryan | 24000 | 16 | 1 | -4.13 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/should-i-take-my-laptop-out.wav` | Ryan | 24000 | 16 | 1 | -5.09 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/shower-gel.wav` | Ryan | 24000 | 16 | 1 | -4.6 | No | No | Pass |
 | `assets/audio/lesson-05/ryan/shower.wav` | Ryan | 24000 | 16 | 1 | -4.64 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/sing.wav` | Ryan | 24000 | 16 | 1 | -5.01 | No | No | Pass |
 | `assets/audio/lesson-05/ryan/single-room.wav` | Ryan | 24000 | 16 | 1 | -5.17 | No | No | Pass |
@@ -233,7 +247,10 @@
 | `assets/audio/lesson-01/ryan/sit.wav` | Ryan | 24000 | 16 | 1 | -5.33 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/sit.wav` | Ryan | 24000 | 16 | 1 | -5.33 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/six.wav` | Ryan | 24000 | 16 | 1 | -5.33 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/soap.wav` | Ryan | 24000 | 16 | 1 | -4.74 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/socket.wav` | Ryan | 24000 | 16 | 1 | -3.41 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/stay.wav` | Ryan | 24000 | 16 | 1 | -3.37 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/storage.wav` | Ryan | 24000 | 16 | 1 | -5.48 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/suitcase.wav` | Ryan | 24000 | 16 | 1 | -3.52 | No | No | Pass |
 | `assets/audio/lesson-05/ryan/suite.wav` | Ryan | 24000 | 16 | 1 | -6.63 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/sun.wav` | Ryan | 24000 | 16 | 1 | -4.45 | No | No | Pass |
@@ -257,6 +274,7 @@
 | `assets/audio/lesson-03/ryan/visa.wav` | Ryan | 24000 | 16 | 1 | -5.26 | No | No | Pass |
 | `assets/audio/lesson-02/ryan/vision.wav` | Ryan | 24000 | 16 | 1 | -5.12 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/visit.wav` | Ryan | 24000 | 16 | 1 | -4.44 | No | No | Pass |
+| `assets/audio/lesson-05/ryan/wake-up-call.wav` | Ryan | 24000 | 16 | 1 | -4.54 | No | No | Pass |
 | `assets/audio/lesson-04/ryan/whether.wav` | Ryan | 24000 | 16 | 1 | -4.94 | No | No | Pass |
 | `assets/audio/lesson-05/ryan/wi-fi.wav` | Ryan | 24000 | 16 | 1 | -4.82 | No | No | Pass |
 | `assets/audio/lesson-03/ryan/window-seat.wav` | Ryan | 24000 | 16 | 1 | -5.14 | No | No | Pass |
@@ -266,6 +284,7 @@
 | `assets/audio/lesson-02/ryan/zoo.wav` | Ryan | 24000 | 16 | 1 | -3.19 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/about.wav` | Sonia | 24000 | 16 | 1 | -5.42 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/accommodation.wav` | Sonia | 24000 | 16 | 1 | -6.56 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/adapter.wav` | Sonia | 24000 | 16 | 1 | -5.04 | No | No | Pass |
 | `assets/audio/lesson-05/sonia/air-conditioning.wav` | Sonia | 24000 | 16 | 1 | -6.03 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/aisle-seat.wav` | Sonia | 24000 | 16 | 1 | -6.36 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/allowance.wav` | Sonia | 24000 | 16 | 1 | -7.4 | No | No | Pass |
@@ -332,13 +351,15 @@
 | `assets/audio/lesson-04/sonia/declare.wav` | Sonia | 24000 | 16 | 1 | -6.01 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/delayed.wav` | Sonia | 24000 | 16 | 1 | -7.05 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/departure.wav` | Sonia | 24000 | 16 | 1 | -4.71 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/deposit.wav` | Sonia | 24000 | 16 | 1 | -6.66 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/destination.wav` | Sonia | 24000 | 16 | 1 | -7.53 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/dog.wav` | Sonia | 24000 | 16 | 1 | -5.31 | No | No | Pass |
 | `assets/audio/lesson-05/sonia/double-room.wav` | Sonia | 24000 | 16 | 1 | -7.82 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/dried-fruit.wav` | Sonia | 24000 | 16 | 1 | -6.08 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/duvet.wav` | Sonia | 24000 | 16 | 1 | -6.72 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/emergency.wav` | Sonia | 24000 | 16 | 1 | -5.27 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/empty-your-pockets.wav` | Sonia | 24000 | 16 | 1 | -5.77 | No | No | Pass |
-| `assets/audio/lesson-05/sonia/en-suite.wav` | Sonia | 24000 | 16 | 1 | -5.98 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/en-suite.wav` | Sonia | 24000 | 16 | 1 | -6.43 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/entire.wav` | Sonia | 24000 | 16 | 1 | -4.6 | No | No | Pass |
 | `assets/audio/lesson-01/sonia/everyday.wav` | Sonia | 24000 | 16 | 1 | -5.89 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/exceed.wav` | Sonia | 24000 | 16 | 1 | -9.3 | No | No | Pass |
@@ -361,6 +382,7 @@
 | `assets/audio/lesson-04/sonia/goods.wav` | Sonia | 24000 | 16 | 1 | -8.83 | No | No | Pass |
 | `assets/audio/lesson-01/sonia/grass.wav` | Sonia | 24000 | 16 | 1 | -5.59 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/hair.wav` | Sonia | 24000 | 16 | 1 | -6.29 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/hairdryer.wav` | Sonia | 24000 | 16 | 1 | -5.63 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/hand-luggage.wav` | Sonia | 24000 | 16 | 1 | -7.5 | No | No | Pass |
 | `assets/audio/lesson-05/sonia/heating.wav` | Sonia | 24000 | 16 | 1 | -8.06 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/holiday.wav` | Sonia | 24000 | 16 | 1 | -6.15 | No | No | Pass |
@@ -393,6 +415,7 @@
 | `assets/audio/lesson-05/sonia/hotel-phrase-23.wav` | Sonia | 24000 | 16 | 1 | -5.42 | No | No | Pass |
 | `assets/audio/lesson-05/sonia/hotel-phrase-24.wav` | Sonia | 24000 | 16 | 1 | -5.56 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/hotel.wav` | Sonia | 24000 | 16 | 1 | -6.77 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/housekeeping.wav` | Sonia | 24000 | 16 | 1 | -7.09 | No | No | Pass |
 | `assets/audio/lesson-01/sonia/how-long-are-you-staying.wav` | Sonia | 24000 | 16 | 1 | -7.22 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/how-much-is-it.wav` | Sonia | 24000 | 16 | 1 | -5.14 | No | No | Pass |
 | `assets/audio/lesson-01/sonia/id-like-to.wav` | Sonia | 24000 | 16 | 1 | -5.67 | No | No | Pass |
@@ -413,11 +436,14 @@
 | `assets/audio/lesson-04/sonia/immigration-return-flight-question.wav` | Sonia | 24000 | 16 | 1 | -5.11 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/immigration.wav` | Sonia | 24000 | 16 | 1 | -6.52 | No | No | Pass |
 | `assets/audio/lesson-05/sonia/included.wav` | Sonia | 24000 | 16 | 1 | -5.24 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/iron.wav` | Sonia | 24000 | 16 | 1 | -6.78 | No | No | Pass |
 | `assets/audio/lesson-01/sonia/is-breakfast-included.wav` | Sonia | 24000 | 16 | 1 | -4.65 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/item.wav` | Sonia | 24000 | 16 | 1 | -8.37 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/job.wav` | Sonia | 24000 | 16 | 1 | -5.18 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/kettle.wav` | Sonia | 24000 | 16 | 1 | -8.87 | No | No | Pass |
 | `assets/audio/lesson-05/sonia/key-card.wav` | Sonia | 24000 | 16 | 1 | -6.41 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/key.wav` | Sonia | 24000 | 16 | 1 | -6.75 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/laundry.wav` | Sonia | 24000 | 16 | 1 | -4.79 | No | No | Pass |
 | `assets/audio/lesson-05/sonia/lift.wav` | Sonia | 24000 | 16 | 1 | -5.67 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/light.wav` | Sonia | 24000 | 16 | 1 | -10.21 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/look.wav` | Sonia | 24000 | 16 | 1 | -5.62 | No | No | Pass |
@@ -446,6 +472,7 @@
 | `assets/audio/lesson-04/sonia/personal-use.wav` | Sonia | 24000 | 16 | 1 | -7.14 | No | No | Pass |
 | `assets/audio/lesson-05/sonia/pillow.wav` | Sonia | 24000 | 16 | 1 | -5.51 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/place-your-bag-on-the-belt.wav` | Sonia | 24000 | 16 | 1 | -5.4 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/plug-adapter.wav` | Sonia | 24000 | 16 | 1 | -4.82 | No | No | Pass |
 | `assets/audio/lesson-01/sonia/pretty-busy.wav` | Sonia | 24000 | 16 | 1 | -5.08 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/priority.wav` | Sonia | 24000 | 16 | 1 | -6.42 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/privilege.wav` | Sonia | 24000 | 16 | 1 | -6.46 | No | No | Pass |
@@ -470,6 +497,8 @@
 | `assets/audio/lesson-04/sonia/return-flight.wav` | Sonia | 24000 | 16 | 1 | -7.0 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/return-ticket.wav` | Sonia | 24000 | 16 | 1 | -6.24 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/right.wav` | Sonia | 24000 | 16 | 1 | -7.76 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/room-service.wav` | Sonia | 24000 | 16 | 1 | -4.97 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/safe.wav` | Sonia | 24000 | 16 | 1 | -5.87 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/sample.wav` | Sonia | 24000 | 16 | 1 | -7.37 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/scale.wav` | Sonia | 24000 | 16 | 1 | -6.86 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/sealed.wav` | Sonia | 24000 | 16 | 1 | -8.8 | No | No | Pass |
@@ -477,10 +506,13 @@
 | `assets/audio/lesson-02/sonia/seat.wav` | Sonia | 24000 | 16 | 1 | -8.23 | No | No | Pass |
 | `assets/audio/lesson-01/sonia/security-check.wav` | Sonia | 24000 | 16 | 1 | -5.74 | No | No | Pass |
 | `assets/audio/lesson-01/sonia/set.wav` | Sonia | 24000 | 16 | 1 | -5.47 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/shampoo.wav` | Sonia | 24000 | 16 | 1 | -5.53 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/she.wav` | Sonia | 24000 | 16 | 1 | -5.72 | No | No | Pass |
 | `assets/audio/lesson-01/sonia/sheep.wav` | Sonia | 24000 | 16 | 1 | -8.46 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/sheet.wav` | Sonia | 24000 | 16 | 1 | -8.51 | No | No | Pass |
 | `assets/audio/lesson-01/sonia/ship.wav` | Sonia | 24000 | 16 | 1 | -5.68 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/should-i-take-my-laptop-out.wav` | Sonia | 24000 | 16 | 1 | -6.71 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/shower-gel.wav` | Sonia | 24000 | 16 | 1 | -7.94 | No | No | Pass |
 | `assets/audio/lesson-05/sonia/shower.wav` | Sonia | 24000 | 16 | 1 | -6.4 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/sing.wav` | Sonia | 24000 | 16 | 1 | -7.59 | No | No | Pass |
 | `assets/audio/lesson-05/sonia/single-room.wav` | Sonia | 24000 | 16 | 1 | -5.22 | No | No | Pass |
@@ -488,7 +520,10 @@
 | `assets/audio/lesson-01/sonia/sit.wav` | Sonia | 24000 | 16 | 1 | -5.93 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/sit.wav` | Sonia | 24000 | 16 | 1 | -5.93 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/six.wav` | Sonia | 24000 | 16 | 1 | -6.9 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/soap.wav` | Sonia | 24000 | 16 | 1 | -6.26 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/socket.wav` | Sonia | 24000 | 16 | 1 | -5.12 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/stay.wav` | Sonia | 24000 | 16 | 1 | -5.53 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/storage.wav` | Sonia | 24000 | 16 | 1 | -8.12 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/suitcase.wav` | Sonia | 24000 | 16 | 1 | -6.46 | No | No | Pass |
 | `assets/audio/lesson-05/sonia/suite.wav` | Sonia | 24000 | 16 | 1 | -7.13 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/sun.wav` | Sonia | 24000 | 16 | 1 | -6.82 | No | No | Pass |
@@ -512,6 +547,7 @@
 | `assets/audio/lesson-03/sonia/visa.wav` | Sonia | 24000 | 16 | 1 | -6.94 | No | No | Pass |
 | `assets/audio/lesson-02/sonia/vision.wav` | Sonia | 24000 | 16 | 1 | -8.78 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/visit.wav` | Sonia | 24000 | 16 | 1 | -7.25 | No | No | Pass |
+| `assets/audio/lesson-05/sonia/wake-up-call.wav` | Sonia | 24000 | 16 | 1 | -5.1 | No | No | Pass |
 | `assets/audio/lesson-04/sonia/whether.wav` | Sonia | 24000 | 16 | 1 | -5.78 | No | No | Pass |
 | `assets/audio/lesson-05/sonia/wi-fi.wav` | Sonia | 24000 | 16 | 1 | -4.55 | No | No | Pass |
 | `assets/audio/lesson-03/sonia/window-seat.wav` | Sonia | 24000 | 16 | 1 | -5.51 | No | No | Pass |

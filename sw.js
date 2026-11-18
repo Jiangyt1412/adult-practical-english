@@ -1,4 +1,4 @@
-const CACHE_NAME = "adult-practical-english-v11";
+const CACHE_NAME = "adult-practical-english-v12";
 const APP_SHELL = [
   "./",
   "./index.html",

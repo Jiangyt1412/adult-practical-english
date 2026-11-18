@@ -6,9 +6,9 @@
     "peak_limit_dbfs": -1.0
   },
   "summary": {
-    "total_files": 510,
-    "ryan_files": 255,
-    "sonia_files": 255,
+    "total_files": 546,
+    "ryan_files": 273,
+    "sonia_files": 273,
     "all_qc_passed": true
   },
   "files": [
@@ -36,6 +36,20 @@
       "channels": 1,
       "duration_seconds": 1.92,
       "peak_dbfs": -5.37,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "adapter.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/adapter.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -4.2,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
@@ -965,6 +979,20 @@
       "qc_passed": true
     },
     {
+      "filename": "deposit.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/deposit.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -4.02,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "destination.wav",
       "relative_path": "assets/audio/lesson-03/ryan/destination.wav",
       "voice": "ryan",
@@ -1016,6 +1044,20 @@
       "channels": 1,
       "duration_seconds": 1.848,
       "peak_dbfs": -3.9,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "duvet.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/duvet.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -4.92,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
@@ -1366,6 +1408,20 @@
       "channels": 1,
       "duration_seconds": 1.368,
       "peak_dbfs": -3.97,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "hairdryer.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/hairdryer.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -3.86,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
@@ -1819,6 +1875,20 @@
       "qc_passed": true
     },
     {
+      "filename": "housekeeping.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/housekeeping.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -4.84,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "how-long-are-you-staying.wav",
       "relative_path": "assets/audio/lesson-01/ryan/how-long-are-you-staying.wav",
       "voice": "ryan",
@@ -2099,6 +2169,20 @@
       "qc_passed": true
     },
     {
+      "filename": "iron.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/iron.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -5.89,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "is-breakfast-included.wav",
       "relative_path": "assets/audio/lesson-01/ryan/is-breakfast-included.wav",
       "voice": "ryan",
@@ -2141,6 +2225,20 @@
       "qc_passed": true
     },
     {
+      "filename": "kettle.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/kettle.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -3.77,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "key-card.wav",
       "relative_path": "assets/audio/lesson-05/ryan/key-card.wav",
       "voice": "ryan",
@@ -2164,6 +2262,20 @@
       "channels": 1,
       "duration_seconds": 1.464,
       "peak_dbfs": -3.63,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "laundry.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/laundry.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -2.73,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
@@ -2561,6 +2673,20 @@
       "qc_passed": true
     },
     {
+      "filename": "plug-adapter.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/plug-adapter.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -3.93,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "pretty-busy.wav",
       "relative_path": "assets/audio/lesson-01/ryan/pretty-busy.wav",
       "voice": "ryan",
@@ -2897,6 +3023,34 @@
       "qc_passed": true
     },
     {
+      "filename": "room-service.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/room-service.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 2.04,
+      "peak_dbfs": -4.67,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "safe.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/safe.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -4.07,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "sample.wav",
       "relative_path": "assets/audio/lesson-04/ryan/sample.wav",
       "voice": "ryan",
@@ -2995,6 +3149,20 @@
       "qc_passed": true
     },
     {
+      "filename": "shampoo.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/shampoo.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -4.46,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "she.wav",
       "relative_path": "assets/audio/lesson-02/ryan/she.wav",
       "voice": "ryan",
@@ -3023,6 +3191,20 @@
       "qc_passed": true
     },
     {
+      "filename": "sheet.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/sheet.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -4.33,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "ship.wav",
       "relative_path": "assets/audio/lesson-01/ryan/ship.wav",
       "voice": "ryan",
@@ -3046,6 +3228,20 @@
       "channels": 1,
       "duration_seconds": 2.616,
       "peak_dbfs": -5.09,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "shower-gel.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/shower-gel.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.896,
+      "peak_dbfs": -4.6,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
@@ -3149,6 +3345,34 @@
       "qc_passed": true
     },
     {
+      "filename": "soap.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/soap.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -4.74,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "socket.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/socket.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -3.41,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "stay.wav",
       "relative_path": "assets/audio/lesson-04/ryan/stay.wav",
       "voice": "ryan",
@@ -3158,6 +3382,20 @@
       "channels": 1,
       "duration_seconds": 1.584,
       "peak_dbfs": -3.37,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "storage.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/storage.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -5.48,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
@@ -3485,6 +3723,20 @@
       "qc_passed": true
     },
     {
+      "filename": "wake-up-call.wav",
+      "relative_path": "assets/audio/lesson-05/ryan/wake-up-call.wav",
+      "voice": "ryan",
+      "voice_name": "en-GB-RyanNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.896,
+      "peak_dbfs": -4.54,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "whether.wav",
       "relative_path": "assets/audio/lesson-04/ryan/whether.wav",
       "voice": "ryan",
@@ -3606,6 +3858,20 @@
       "channels": 1,
       "duration_seconds": 1.536,
       "peak_dbfs": -6.56,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "adapter.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/adapter.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -5.04,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
@@ -4535,6 +4801,20 @@
       "qc_passed": true
     },
     {
+      "filename": "deposit.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/deposit.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -6.66,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "destination.wav",
       "relative_path": "assets/audio/lesson-03/sonia/destination.wav",
       "voice": "sonia",
@@ -4591,6 +4871,20 @@
       "qc_passed": true
     },
     {
+      "filename": "duvet.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/duvet.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -6.72,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "emergency.wav",
       "relative_path": "assets/audio/lesson-03/sonia/emergency.wav",
       "voice": "sonia",
@@ -4627,7 +4921,7 @@
       "bit_depth": 16,
       "channels": 1,
       "duration_seconds": 1.872,
-      "peak_dbfs": -5.98,
+      "peak_dbfs": -6.43,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
@@ -4936,6 +5230,20 @@
       "channels": 1,
       "duration_seconds": 0.912,
       "peak_dbfs": -6.29,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "hairdryer.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/hairdryer.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -5.63,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
@@ -5389,6 +5697,20 @@
       "qc_passed": true
     },
     {
+      "filename": "housekeeping.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/housekeeping.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -7.09,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "how-long-are-you-staying.wav",
       "relative_path": "assets/audio/lesson-01/sonia/how-long-are-you-staying.wav",
       "voice": "sonia",
@@ -5669,6 +5991,20 @@
       "qc_passed": true
     },
     {
+      "filename": "iron.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/iron.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -6.78,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "is-breakfast-included.wav",
       "relative_path": "assets/audio/lesson-01/sonia/is-breakfast-included.wav",
       "voice": "sonia",
@@ -5711,6 +6047,20 @@
       "qc_passed": true
     },
     {
+      "filename": "kettle.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/kettle.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -8.87,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "key-card.wav",
       "relative_path": "assets/audio/lesson-05/sonia/key-card.wav",
       "voice": "sonia",
@@ -5734,6 +6084,20 @@
       "channels": 1,
       "duration_seconds": 0.936,
       "peak_dbfs": -6.75,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "laundry.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/laundry.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -4.79,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
@@ -6131,6 +6495,20 @@
       "qc_passed": true
     },
     {
+      "filename": "plug-adapter.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/plug-adapter.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -4.82,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "pretty-busy.wav",
       "relative_path": "assets/audio/lesson-01/sonia/pretty-busy.wav",
       "voice": "sonia",
@@ -6467,6 +6845,34 @@
       "qc_passed": true
     },
     {
+      "filename": "room-service.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/room-service.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -4.97,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "safe.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/safe.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -5.87,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "sample.wav",
       "relative_path": "assets/audio/lesson-04/sonia/sample.wav",
       "voice": "sonia",
@@ -6565,6 +6971,20 @@
       "qc_passed": true
     },
     {
+      "filename": "shampoo.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/shampoo.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -5.53,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "she.wav",
       "relative_path": "assets/audio/lesson-02/sonia/she.wav",
       "voice": "sonia",
@@ -6593,6 +7013,20 @@
       "qc_passed": true
     },
     {
+      "filename": "sheet.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/sheet.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -8.51,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "ship.wav",
       "relative_path": "assets/audio/lesson-01/sonia/ship.wav",
       "voice": "sonia",
@@ -6616,6 +7050,20 @@
       "channels": 1,
       "duration_seconds": 2.232,
       "peak_dbfs": -6.71,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "shower-gel.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/shower-gel.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -7.94,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
@@ -6719,6 +7167,34 @@
       "qc_passed": true
     },
     {
+      "filename": "soap.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/soap.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -6.26,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "socket.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/socket.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -5.12,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
       "filename": "stay.wav",
       "relative_path": "assets/audio/lesson-04/sonia/stay.wav",
       "voice": "sonia",
@@ -6728,6 +7204,20 @@
       "channels": 1,
       "duration_seconds": 1.056,
       "peak_dbfs": -5.53,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "storage.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/storage.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -8.12,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true
@@ -7050,6 +7540,20 @@
       "channels": 1,
       "duration_seconds": 1.128,
       "peak_dbfs": -7.25,
+      "clipping_detected": false,
+      "abnormal_transient_detected": false,
+      "qc_passed": true
+    },
+    {
+      "filename": "wake-up-call.wav",
+      "relative_path": "assets/audio/lesson-05/sonia/wake-up-call.wav",
+      "voice": "sonia",
+      "voice_name": "en-GB-SoniaNeural",
+      "sample_rate": 24000,
+      "bit_depth": 16,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "peak_dbfs": -5.1,
       "clipping_detected": false,
       "abnormal_transient_detected": false,
       "qc_passed": true

@@ -64,6 +64,8 @@ python3 -m http.server 8000
 
 The committed WAV files are the website's master audio. The generator uses Microsoft `en-GB-RyanNeural` and `en-GB-SoniaNeural` through `edge-tts`, then converts and checks every file locally.
 
+The Lesson 5 Sonia “en-suite” clip uses the explicit homophone cue “on sweet” for the source UK IPA `/ˌɒn ˈswiːt/` ([Cambridge pronunciation](https://dictionary.cambridge.org/pronunciation/english/en-suite)). The displayed spelling, meaning and IPA stay unchanged. This is a synthesized pronunciation cue, not a dictionary recording or a completed human listening review. Its audio URL has a Sonia-only revision so existing browser caches do not retain the old clip.
+
 Requirements:
 
 - Python 3.10 or later
@@ -90,7 +92,7 @@ Run:
 python scripts/generate_audio.py
 ```
 
-Then confirm the summary says 510 files, 255 Ryan files, 255 Sonia files, and `All QC passed: Yes`. The target format is WAV, 24,000 Hz, 16-bit PCM, mono, with a peak no higher than -1 dBFS. These checks cover audio format and signal quality, not a human assessment of pronunciation.
+Then confirm the summary says 546 files, 273 Ryan files, 273 Sonia files, and `All QC passed: Yes`. The target format is WAV, 24,000 Hz, 16-bit PCM, mono, with a peak no higher than -1 dBFS. These checks cover audio format and signal quality, not a human assessment of pronunciation.
 
 ## Deploy to GitHub Pages
 
@@ -143,7 +145,7 @@ The website does not use the GitHub API at runtime.
 - Lesson 3: Airport Review, with 38 vocabulary entries, 6 check-in question-and-answer groups, and 10 useful phrases. Each dialogue turn has its own Ryan and Sonia playback. English text, supplied IPA, Chinese meanings, and item order follow the source Word homework. The standalone “aisle seat” audio uses a slower pace and a short pause between words for clearer practice.
 - Lesson 4: Immigration & Customs Review, with 32 vocabulary entries and 10 scenario-based question-and-answer groups. Each question and example answer has its own Ryan and Sonia playback, including separate first-visit answer alternatives. Wording, IPA, Chinese meanings, scenario labels, and order follow the source Word homework.
 
-- Lesson 5: Hotel English Review, with 36 vocabulary entries and 24 scenario-based phrases. Each word and phrase has separate Ryan and Sonia playback. English text, supplied IPA, Chinese meanings, scenario labels, and order follow the source Word review. The noun ‘refund’ is generated in a noun context, and the Lesson 5 Ryan ‘passport’ uses the previously rebuilt word audio.
+- Lesson 5: Hotel English Review, with 54 vocabulary entries (36 from the Word review plus 18 supplied in follow-up screenshots) and 24 scenario-based phrases. Supplementary words are inserted beside the related existing entries: hotel services at reception, storage by luggage, toiletries by towel, bedding by pillow, room equipment by air conditioning, and deposit by charge. Each word and phrase has separate Ryan and Sonia playback. English text, supplied IPA, Chinese meanings, scenario labels, and order follow the source Word review. The noun ‘refund’ is generated in a noun context, and the Lesson 5 Ryan ‘passport’ uses the previously rebuilt word audio.
 
 The Lesson 4 Ryan versions of “passport” and “priority” use a slightly slower contextual reading. The generator extracts each complete final word using word-boundary timestamps; the carrier phrase is not included in the lesson audio. Sonia files and displayed Word content are unchanged. These regeneration and signal checks do not replace a listening review of pronunciation.
 

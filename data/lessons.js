@@ -448,7 +448,22 @@ window.ADULT_ENGLISH_LESSONS = {
                 }
               ],
               "speech": "en-suite",
-              "audio": {"voices": {"sonia": {"text": "en suite.", "rate": "-6%"}}}
+              "audio": {
+                "version": {
+                  "sonia": "2"
+                },
+                "voices": {
+                  "sonia": {
+                    "rate": "-6%",
+                    "pronunciation": {
+                      "method": "homophones",
+                      "text": "on sweet.",
+                      "ipa": "/ˌɒn ˈswiːt/",
+                      "reference": "https://dictionary.cambridge.org/pronunciation/english/en-suite"
+                    }
+                  }
+                }
+              }
             },
             {
               "id": "cancel",
@@ -486,6 +501,54 @@ window.ADULT_ENGLISH_LESSONS = {
                 }
               ],
               "speech": "reception"
+            },
+            {
+              "id": "housekeeping",
+              "meaning": "客房清洁",
+              "terms": [
+                {
+                  "text": "housekeeping",
+                  "ipa": "/ˈhaʊskiːpɪŋ/"
+                }
+              ],
+              "speech": "housekeeping",
+              "tag": "酒店服务"
+            },
+            {
+              "id": "laundry",
+              "meaning": "洗衣",
+              "terms": [
+                {
+                  "text": "laundry",
+                  "ipa": "/ˈlɔːndri/"
+                }
+              ],
+              "speech": "laundry",
+              "tag": "酒店服务"
+            },
+            {
+              "id": "room-service",
+              "meaning": "客房送餐",
+              "terms": [
+                {
+                  "text": "room service",
+                  "ipa": "/ˈruːm sɜːvɪs/"
+                }
+              ],
+              "speech": "room service",
+              "tag": "酒店服务"
+            },
+            {
+              "id": "wake-up-call",
+              "meaning": "叫醒服务",
+              "terms": [
+                {
+                  "text": "wake-up call",
+                  "ipa": "/ˈweɪk ʌp kɔːl/"
+                }
+              ],
+              "speech": "wake-up call",
+              "tag": "酒店服务"
             },
             {
               "id": "passport",
@@ -527,6 +590,18 @@ window.ADULT_ENGLISH_LESSONS = {
                 }
               ],
               "speech": "luggage"
+            },
+            {
+              "id": "storage",
+              "meaning": "寄存；存放",
+              "terms": [
+                {
+                  "text": "storage",
+                  "ipa": "/ˈstɔːrɪdʒ/"
+                }
+              ],
+              "speech": "storage",
+              "tag": "行李服务"
             },
             {
               "id": "lift",
@@ -606,6 +681,42 @@ window.ADULT_ENGLISH_LESSONS = {
               "speech": "towel"
             },
             {
+              "id": "shampoo",
+              "meaning": "洗发水",
+              "terms": [
+                {
+                  "text": "shampoo",
+                  "ipa": "/ʃæmˈpuː/"
+                }
+              ],
+              "speech": "shampoo",
+              "tag": "洗护用品"
+            },
+            {
+              "id": "soap",
+              "meaning": "肥皂",
+              "terms": [
+                {
+                  "text": "soap",
+                  "ipa": "/səʊp/"
+                }
+              ],
+              "speech": "soap",
+              "tag": "洗护用品"
+            },
+            {
+              "id": "shower-gel",
+              "meaning": "沐浴露",
+              "terms": [
+                {
+                  "text": "shower gel",
+                  "ipa": "/ˈʃaʊə dʒel/"
+                }
+              ],
+              "speech": "shower gel",
+              "tag": "洗护用品"
+            },
+            {
               "id": "pillow",
               "meaning": "枕头",
               "terms": [
@@ -615,6 +726,30 @@ window.ADULT_ENGLISH_LESSONS = {
                 }
               ],
               "speech": "pillow"
+            },
+            {
+              "id": "duvet",
+              "meaning": "被子",
+              "terms": [
+                {
+                  "text": "duvet",
+                  "ipa": "/ˈduːveɪ/"
+                }
+              ],
+              "speech": "duvet",
+              "tag": "床上用品"
+            },
+            {
+              "id": "sheet",
+              "meaning": "床单",
+              "terms": [
+                {
+                  "text": "sheet",
+                  "ipa": "/ʃiːt/"
+                }
+              ],
+              "speech": "sheet",
+              "tag": "床上用品"
             },
             {
               "id": "blanket",
@@ -672,6 +807,90 @@ window.ADULT_ENGLISH_LESSONS = {
               "speech": "air conditioning"
             },
             {
+              "id": "hairdryer",
+              "meaning": "吹风机",
+              "terms": [
+                {
+                  "text": "hairdryer",
+                  "ipa": "/ˈheədraɪə/"
+                }
+              ],
+              "speech": "hairdryer",
+              "tag": "客房设施"
+            },
+            {
+              "id": "kettle",
+              "meaning": "烧水壶",
+              "terms": [
+                {
+                  "text": "kettle",
+                  "ipa": "/ˈketl/"
+                }
+              ],
+              "speech": "kettle",
+              "tag": "客房设施"
+            },
+            {
+              "id": "adapter",
+              "meaning": "转接头",
+              "terms": [
+                {
+                  "text": "adapter",
+                  "ipa": "/əˈdæptə/"
+                }
+              ],
+              "speech": "adapter",
+              "tag": "客房设施"
+            },
+            {
+              "id": "plug-adapter",
+              "meaning": "插头转换器",
+              "terms": [
+                {
+                  "text": "plug adapter",
+                  "ipa": "/plʌɡ/ /əˈdæptə/"
+                }
+              ],
+              "speech": "plug adapter",
+              "tag": "客房设施"
+            },
+            {
+              "id": "socket",
+              "meaning": "插座",
+              "terms": [
+                {
+                  "text": "socket",
+                  "ipa": "/ˈsɒkɪt/"
+                }
+              ],
+              "speech": "socket",
+              "tag": "客房设施"
+            },
+            {
+              "id": "iron",
+              "meaning": "熨斗",
+              "terms": [
+                {
+                  "text": "iron",
+                  "ipa": "/ˈaɪən/"
+                }
+              ],
+              "speech": "iron",
+              "tag": "客房设施"
+            },
+            {
+              "id": "safe",
+              "meaning": "保险箱",
+              "terms": [
+                {
+                  "text": "safe",
+                  "ipa": "/seɪf/"
+                }
+              ],
+              "speech": "safe",
+              "tag": "客房设施"
+            },
+            {
               "id": "noisy",
               "meaning": "吵的",
               "terms": [
@@ -725,6 +944,18 @@ window.ADULT_ENGLISH_LESSONS = {
                 }
               ],
               "speech": "charge"
+            },
+            {
+              "id": "deposit",
+              "meaning": "订金；押金",
+              "terms": [
+                {
+                  "text": "deposit",
+                  "ipa": "/dɪˈpɒzɪt/"
+                }
+              ],
+              "speech": "deposit",
+              "tag": "费用与结算"
             },
             {
               "id": "total",
