@@ -146,7 +146,12 @@ async def generate_item_audio(item: dict, voice: str, ffmpeg: str, temp: Path, p
     parts = settings.get("parts")
     if not parts:
         mp3 = temp / f"{prefix}.mp3"
-        await synthesize(item["speech"], voice, mp3, settings.get("rate"))
+        speech_text = settings.get("text", item["speech"])
+        source_letters = "".join(char.casefold() for char in item["speech"] if char.isalnum())
+        spoken_letters = "".join(char.casefold() for char in speech_text if char.isalnum())
+        if source_letters != spoken_letters:
+            raise ValueError("Speech text overrides may change punctuation and spacing only")
+        await synthesize(speech_text, voice, mp3, settings.get("rate"))
         run_ffmpeg(ffmpeg, mp3, output)
         enforce_peak(ffmpeg, output)
         return

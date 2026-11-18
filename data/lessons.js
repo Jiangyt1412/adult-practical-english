@@ -328,6 +328,698 @@ window.ADULT_ENGLISH_LESSONS = {
           ]
         }
       ]
+    },
+    {
+      "id": "lesson-05",
+      "number": "Lesson 5",
+      "title": "Hotel English Review",
+      "page": "lesson-05.html",
+      "eyebrow": "Listen → Repeat → Practise",
+      "sections": [
+        {
+          "title": "单词表",
+          "items": [
+            {
+              "id": "book",
+              "meaning": "预订",
+              "terms": [
+                {
+                  "text": "book",
+                  "ipa": "/bʊk/"
+                }
+              ],
+              "speech": "book"
+            },
+            {
+              "id": "reservation",
+              "meaning": "预订",
+              "terms": [
+                {
+                  "text": "reservation",
+                  "ipa": "/ˌrezəˈveɪʃn/"
+                }
+              ],
+              "speech": "reservation"
+            },
+            {
+              "id": "available",
+              "meaning": "有空的",
+              "terms": [
+                {
+                  "text": "available",
+                  "ipa": "/əˈveɪləbl/"
+                }
+              ],
+              "speech": "available"
+            },
+            {
+              "id": "night",
+              "meaning": "晚；夜",
+              "terms": [
+                {
+                  "text": "night",
+                  "ipa": "/naɪt/"
+                }
+              ],
+              "speech": "night"
+            },
+            {
+              "id": "rate",
+              "meaning": "房价",
+              "terms": [
+                {
+                  "text": "rate",
+                  "ipa": "/reɪt/"
+                }
+              ],
+              "speech": "rate"
+            },
+            {
+              "id": "single-room",
+              "meaning": "单人间",
+              "terms": [
+                {
+                  "text": "single room",
+                  "ipa": "/ˈsɪŋɡl/ /ruːm/"
+                }
+              ],
+              "speech": "single room"
+            },
+            {
+              "id": "double-room",
+              "meaning": "双人床房",
+              "terms": [
+                {
+                  "text": "double room",
+                  "ipa": "/ˈdʌbl/ /ruːm/"
+                }
+              ],
+              "speech": "double room"
+            },
+            {
+              "id": "twin-room",
+              "meaning": "双床房（两张独立床）",
+              "terms": [
+                {
+                  "text": "twin room",
+                  "ipa": "/twɪn/ /ruːm/"
+                }
+              ],
+              "speech": "twin room"
+            },
+            {
+              "id": "suite",
+              "meaning": "套房",
+              "terms": [
+                {
+                  "text": "suite",
+                  "ipa": "/swiːt/"
+                }
+              ],
+              "speech": "suite"
+            },
+            {
+              "id": "en-suite",
+              "meaning": "与卧室相连的私人浴室",
+              "terms": [
+                {
+                  "text": "en-suite",
+                  "ipa": "/ˌɒn ˈswiːt/"
+                }
+              ],
+              "speech": "en-suite",
+              "audio": {"voices": {"sonia": {"text": "en suite.", "rate": "-6%"}}}
+            },
+            {
+              "id": "cancel",
+              "meaning": "取消",
+              "terms": [
+                {
+                  "text": "cancel",
+                  "ipa": "/ˈkænsl/"
+                }
+              ],
+              "speech": "cancel"
+            },
+            {
+              "id": "refund",
+              "meaning": "退款（名词）",
+              "terms": [
+                {
+                  "text": "refund",
+                  "ipa": "/ˈriːfʌnd/"
+                }
+              ],
+              "speech": "refund",
+              "audio": {
+                "context": "The noun is: refund.",
+                "rate": "-6%"
+              }
+            },
+            {
+              "id": "reception",
+              "meaning": "前台",
+              "terms": [
+                {
+                  "text": "reception",
+                  "ipa": "/rɪˈsepʃn/"
+                }
+              ],
+              "speech": "reception"
+            },
+            {
+              "id": "passport",
+              "meaning": "护照",
+              "terms": [
+                {
+                  "text": "passport",
+                  "ipa": "/ˈpɑːspɔːt/"
+                }
+              ],
+              "speech": "passport",
+              "audio": {
+                "voices": {
+                  "ryan": {
+                    "context": "The word is: passport.",
+                    "rate": "-8%"
+                  }
+                }
+              }
+            },
+            {
+              "id": "key-card",
+              "meaning": "门卡",
+              "terms": [
+                {
+                  "text": "key card",
+                  "ipa": "/ˈkiː kɑːd/"
+                }
+              ],
+              "speech": "key card"
+            },
+            {
+              "id": "luggage",
+              "meaning": "行李",
+              "terms": [
+                {
+                  "text": "luggage",
+                  "ipa": "/ˈlʌɡɪdʒ/"
+                }
+              ],
+              "speech": "luggage"
+            },
+            {
+              "id": "lift",
+              "meaning": "电梯",
+              "terms": [
+                {
+                  "text": "lift",
+                  "ipa": "/lɪft/"
+                }
+              ],
+              "speech": "lift"
+            },
+            {
+              "id": "floor",
+              "meaning": "楼层（英式 first floor 指中国二楼）",
+              "terms": [
+                {
+                  "text": "floor",
+                  "ipa": "/flɔː/"
+                }
+              ],
+              "speech": "floor"
+            },
+            {
+              "id": "breakfast",
+              "meaning": "早餐",
+              "terms": [
+                {
+                  "text": "breakfast",
+                  "ipa": "/ˈbrekfəst/"
+                }
+              ],
+              "speech": "breakfast"
+            },
+            {
+              "id": "included",
+              "meaning": "包含在内的",
+              "terms": [
+                {
+                  "text": "included",
+                  "ipa": "/ɪnˈkluːdɪd/"
+                }
+              ],
+              "speech": "included"
+            },
+            {
+              "id": "wi-fi",
+              "meaning": "无线网络",
+              "terms": [
+                {
+                  "text": "Wi-Fi",
+                  "ipa": "/ˈwaɪfaɪ/"
+                }
+              ],
+              "speech": "Wi-Fi"
+            },
+            {
+              "id": "password",
+              "meaning": "密码",
+              "terms": [
+                {
+                  "text": "password",
+                  "ipa": "/ˈpɑːswɜːd/"
+                }
+              ],
+              "speech": "password"
+            },
+            {
+              "id": "towel",
+              "meaning": "毛巾",
+              "terms": [
+                {
+                  "text": "towel",
+                  "ipa": "/ˈtaʊəl/"
+                }
+              ],
+              "speech": "towel"
+            },
+            {
+              "id": "pillow",
+              "meaning": "枕头",
+              "terms": [
+                {
+                  "text": "pillow",
+                  "ipa": "/ˈpɪləʊ/"
+                }
+              ],
+              "speech": "pillow"
+            },
+            {
+              "id": "blanket",
+              "meaning": "毯子",
+              "terms": [
+                {
+                  "text": "blanket",
+                  "ipa": "/ˈblæŋkɪt/"
+                }
+              ],
+              "speech": "blanket"
+            },
+            {
+              "id": "shower",
+              "meaning": "淋浴",
+              "terms": [
+                {
+                  "text": "shower",
+                  "ipa": "/ˈʃaʊə/"
+                }
+              ],
+              "speech": "shower"
+            },
+            {
+              "id": "hot-water",
+              "meaning": "热水",
+              "terms": [
+                {
+                  "text": "hot water",
+                  "ipa": "/ˌhɒt ˈwɔːtə/"
+                }
+              ],
+              "speech": "hot water"
+            },
+            {
+              "id": "heating",
+              "meaning": "暖气",
+              "terms": [
+                {
+                  "text": "heating",
+                  "ipa": "/ˈhiːtɪŋ/"
+                }
+              ],
+              "speech": "heating"
+            },
+            {
+              "id": "air-conditioning",
+              "meaning": "空调",
+              "terms": [
+                {
+                  "text": "air conditioning",
+                  "ipa": "/ˈeə kəndɪʃənɪŋ/"
+                }
+              ],
+              "speech": "air conditioning"
+            },
+            {
+              "id": "noisy",
+              "meaning": "吵的",
+              "terms": [
+                {
+                  "text": "noisy",
+                  "ipa": "/ˈnɔɪzi/"
+                }
+              ],
+              "speech": "noisy"
+            },
+            {
+              "id": "quiet",
+              "meaning": "安静的",
+              "terms": [
+                {
+                  "text": "quiet",
+                  "ipa": "/ˈkwaɪət/"
+                }
+              ],
+              "speech": "quiet"
+            },
+            {
+              "id": "broken",
+              "meaning": "坏了的",
+              "terms": [
+                {
+                  "text": "broken",
+                  "ipa": "/ˈbrəʊkən/"
+                }
+              ],
+              "speech": "broken"
+            },
+            {
+              "id": "bill",
+              "meaning": "账单",
+              "terms": [
+                {
+                  "text": "bill",
+                  "ipa": "/bɪl/"
+                }
+              ],
+              "speech": "bill"
+            },
+            {
+              "id": "charge",
+              "meaning": "费用",
+              "terms": [
+                {
+                  "text": "charge",
+                  "ipa": "/tʃɑːdʒ/"
+                }
+              ],
+              "speech": "charge"
+            },
+            {
+              "id": "total",
+              "meaning": "总额",
+              "terms": [
+                {
+                  "text": "total",
+                  "ipa": "/ˈtəʊtl/"
+                }
+              ],
+              "speech": "total"
+            },
+            {
+              "id": "receipt",
+              "meaning": "收据",
+              "terms": [
+                {
+                  "text": "receipt",
+                  "ipa": "/rɪˈsiːt/"
+                }
+              ],
+              "speech": "receipt"
+            }
+          ]
+        },
+        {
+          "title": "按场景使用的短句",
+          "items": [
+            {
+              "id": "hotel-phrase-01",
+              "lead": "预订房间",
+              "meaning": "我想订一间双人床房。",
+              "terms": [
+                {
+                  "text": "I’d like a double room, please."
+                }
+              ],
+              "speech": "I’d like a double room, please."
+            },
+            {
+              "id": "hotel-phrase-02",
+              "lead": "住宿晚数",
+              "meaning": "住两晚，谢谢。",
+              "terms": [
+                {
+                  "text": "Two nights, please."
+                }
+              ],
+              "speech": "Two nights, please."
+            },
+            {
+              "id": "hotel-phrase-03",
+              "lead": "询问房价",
+              "meaning": "房价是多少？",
+              "terms": [
+                {
+                  "text": "What’s the room rate?"
+                }
+              ],
+              "speech": "What’s the room rate?"
+            },
+            {
+              "id": "hotel-phrase-04",
+              "lead": "更改预订",
+              "meaning": "我可以更改预订吗？",
+              "terms": [
+                {
+                  "text": "Could I change my booking?"
+                }
+              ],
+              "speech": "Could I change my booking?"
+            },
+            {
+              "id": "hotel-phrase-05",
+              "lead": "取消预订",
+              "meaning": "我可以取消预订吗？",
+              "terms": [
+                {
+                  "text": "Could I cancel my booking?"
+                }
+              ],
+              "speech": "Could I cancel my booking?"
+            },
+            {
+              "id": "hotel-phrase-06",
+              "lead": "办理入住",
+              "meaning": "我有预订，预订人姓陈。",
+              "terms": [
+                {
+                  "text": "I have a reservation under Chen."
+                }
+              ],
+              "speech": "I have a reservation under Chen."
+            },
+            {
+              "id": "hotel-phrase-07",
+              "lead": "提前入住",
+              "meaning": "我现在可以办理入住吗？",
+              "terms": [
+                {
+                  "text": "Can I check in now?"
+                }
+              ],
+              "speech": "Can I check in now?"
+            },
+            {
+              "id": "hotel-phrase-08",
+              "lead": "行李寄存",
+              "meaning": "我可以把行李寄存在这里吗？",
+              "terms": [
+                {
+                  "text": "Can I leave my bags here?"
+                }
+              ],
+              "speech": "Can I leave my bags here?"
+            },
+            {
+              "id": "hotel-phrase-09",
+              "lead": "寻找电梯",
+              "meaning": "电梯在哪里？",
+              "terms": [
+                {
+                  "text": "Where is the lift?"
+                }
+              ],
+              "speech": "Where is the lift?"
+            },
+            {
+              "id": "hotel-phrase-10",
+              "lead": "早餐费用",
+              "meaning": "早餐包含在房价内吗？",
+              "terms": [
+                {
+                  "text": "Is breakfast included?"
+                }
+              ],
+              "speech": "Is breakfast included?"
+            },
+            {
+              "id": "hotel-phrase-11",
+              "lead": "早餐时间",
+              "meaning": "早餐几点供应？",
+              "terms": [
+                {
+                  "text": "What time is breakfast?"
+                }
+              ],
+              "speech": "What time is breakfast?"
+            },
+            {
+              "id": "hotel-phrase-12",
+              "lead": "网络密码",
+              "meaning": "无线网络密码是什么？",
+              "terms": [
+                {
+                  "text": "What’s the Wi-Fi password?"
+                }
+              ],
+              "speech": "What’s the Wi-Fi password?"
+            },
+            {
+              "id": "hotel-phrase-13",
+              "lead": "加送毛巾",
+              "meaning": "可以再给我两条毛巾吗？",
+              "terms": [
+                {
+                  "text": "Could I have two extra towels?"
+                }
+              ],
+              "speech": "Could I have two extra towels?"
+            },
+            {
+              "id": "hotel-phrase-14",
+              "lead": "客房清洁",
+              "meaning": "今天可以帮我打扫房间吗？",
+              "terms": [
+                {
+                  "text": "Could you clean my room today?"
+                }
+              ],
+              "speech": "Could you clean my room today?"
+            },
+            {
+              "id": "hotel-phrase-15",
+              "lead": "门卡问题",
+              "meaning": "我的门卡不能用了。",
+              "terms": [
+                {
+                  "text": "My key card doesn’t work."
+                }
+              ],
+              "speech": "My key card doesn’t work."
+            },
+            {
+              "id": "hotel-phrase-16",
+              "lead": "热水问题",
+              "meaning": "没有热水。",
+              "terms": [
+                {
+                  "text": "There’s no hot water."
+                }
+              ],
+              "speech": "There’s no hot water."
+            },
+            {
+              "id": "hotel-phrase-17",
+              "lead": "暖气问题",
+              "meaning": "暖气不能用了。",
+              "terms": [
+                {
+                  "text": "The heating isn’t working."
+                }
+              ],
+              "speech": "The heating isn’t working."
+            },
+            {
+              "id": "hotel-phrase-18",
+              "lead": "换房请求",
+              "meaning": "能换一间更安静的房间吗？",
+              "terms": [
+                {
+                  "text": "Could I have a quieter room?"
+                }
+              ],
+              "speech": "Could I have a quieter room?"
+            },
+            {
+              "id": "hotel-phrase-19",
+              "lead": "请求检查",
+              "meaning": "能请您检查一下吗？",
+              "terms": [
+                {
+                  "text": "Could you check it, please?"
+                }
+              ],
+              "speech": "Could you check it, please?"
+            },
+            {
+              "id": "hotel-phrase-20",
+              "lead": "办理退房",
+              "meaning": "我想办理退房。",
+              "terms": [
+                {
+                  "text": "I’d like to check out, please."
+                }
+              ],
+              "speech": "I’d like to check out, please."
+            },
+            {
+              "id": "hotel-phrase-21",
+              "lead": "查看账单",
+              "meaning": "我可以看一下账单吗？",
+              "terms": [
+                {
+                  "text": "Could I see the bill?"
+                }
+              ],
+              "speech": "Could I see the bill?"
+            },
+            {
+              "id": "hotel-phrase-22",
+              "lead": "核对费用",
+              "meaning": "这笔费用是什么？",
+              "terms": [
+                {
+                  "text": "What is this charge for?"
+                }
+              ],
+              "speech": "What is this charge for?"
+            },
+            {
+              "id": "hotel-phrase-23",
+              "lead": "索要收据",
+              "meaning": "请给我一张收据。",
+              "terms": [
+                {
+                  "text": "Could I have a receipt, please?"
+                }
+              ],
+              "speech": "Could I have a receipt, please?"
+            },
+            {
+              "id": "hotel-phrase-24",
+              "lead": "延迟退房",
+              "meaning": "我可以晚一点退房吗？",
+              "terms": [
+                {
+                  "text": "Could I check out later?"
+                }
+              ],
+              "speech": "Could I check out later?"
+            }
+          ]
+        }
+      ]
     }
   ]
 };

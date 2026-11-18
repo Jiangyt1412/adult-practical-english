@@ -28,6 +28,7 @@ adult-practical-english/
 ├── lesson-02.html
 ├── lesson-03.html
 ├── lesson-04.html
+├── lesson-05.html
 ├── styles.css
 ├── app.js
 ├── manifest.json
@@ -41,7 +42,8 @@ adult-practical-english/
 │       ├── lesson-01/
 │       ├── lesson-02/
 │       ├── lesson-03/
-│       └── lesson-04/
+│       ├── lesson-04/
+│       └── lesson-05/
 ├── scripts/
 │   ├── generate_audio.py
 │   └── requirements.txt
@@ -88,7 +90,7 @@ Run:
 python scripts/generate_audio.py
 ```
 
-Then confirm the summary says 390 files, 195 Ryan files, 195 Sonia files, and `All QC passed: Yes`. The target format is WAV, 24,000 Hz, 16-bit PCM, mono, with a peak no higher than -1 dBFS. These checks cover audio format and signal quality, not a human assessment of pronunciation.
+Then confirm the summary says 510 files, 255 Ryan files, 255 Sonia files, and `All QC passed: Yes`. The target format is WAV, 24,000 Hz, 16-bit PCM, mono, with a peak no higher than -1 dBFS. These checks cover audio format and signal quality, not a human assessment of pronunciation.
 
 ## Deploy to GitHub Pages
 
@@ -140,6 +142,8 @@ The website does not use the GitHub API at runtime.
 - Lesson 2: British English IPA Review, with 44 items covering monophthongs, diphthongs, and consonants
 - Lesson 3: Airport Review, with 38 vocabulary entries, 6 check-in question-and-answer groups, and 10 useful phrases. Each dialogue turn has its own Ryan and Sonia playback. English text, supplied IPA, Chinese meanings, and item order follow the source Word homework. The standalone “aisle seat” audio uses a slower pace and a short pause between words for clearer practice.
 - Lesson 4: Immigration & Customs Review, with 32 vocabulary entries and 10 scenario-based question-and-answer groups. Each question and example answer has its own Ryan and Sonia playback, including separate first-visit answer alternatives. Wording, IPA, Chinese meanings, scenario labels, and order follow the source Word homework.
+
+- Lesson 5: Hotel English Review, with 36 vocabulary entries and 24 scenario-based phrases. Each word and phrase has separate Ryan and Sonia playback. English text, supplied IPA, Chinese meanings, scenario labels, and order follow the source Word review. The noun ‘refund’ is generated in a noun context, and the Lesson 5 Ryan ‘passport’ uses the previously rebuilt word audio.
 
 The Lesson 4 Ryan versions of “passport” and “priority” use a slightly slower contextual reading. The generator extracts each complete final word using word-boundary timestamps; the carrier phrase is not included in the lesson audio. Sonia files and displayed Word content are unchanged. These regeneration and signal checks do not replace a listening review of pronunciation.
 

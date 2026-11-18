@@ -15,6 +15,7 @@ FILES = [
     "lesson-02.html",
     "lesson-03.html",
     "lesson-04.html",
+    "lesson-05.html",
     "styles.css",
     "app.js",
     "manifest.json",
